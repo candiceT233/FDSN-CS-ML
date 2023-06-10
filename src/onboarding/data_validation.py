@@ -109,8 +109,23 @@ def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
     return dataframe
 
 def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_filenewname):
-    print(Data_key_map)
-
+    all_columns = dataframe.columns 
+    for c in all_columns:
+        dtype = str(dataframe[c].dtype)
+        if c not in exist_cols:
+            logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
+        else:
+            # expect_dtype = Data_key_map[Data_key_map['Column Name'] == c]['Expected_Data_type']
+            row = Data_key_map[Data_key_map['Column Name'] == c]
+            if not row.empty:
+                expect_dtype = row['Expected_Data_type'].values[0]
+                if expect_dtype != dtype:
+                    logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
+                    logger.info(f"{dataframe_name}: Column [{c}] expected data type - {expect_dtype}")
+                    # update the data type mismatch file
+                    orig_files = str(row['Data_type_Mismatch File'].values[0])
+                    orig_files += str(data_filenewname)+","
+                    Data_key_map.loc[Data_key_map['Column Name'] == c, 'Data_type_Mismatch File'] = orig_files
 
 def parsing_arguments():
     # Start the argument parser
