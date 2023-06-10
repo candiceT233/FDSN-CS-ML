@@ -1,0 +1,50 @@
+2023-06-09 23:35:47,809 - __main__ - INFO - data/raw/RRB_datasets/RRB_Demo_for cs.xlsx read successfully
+2023-06-09 23:35:47,816 - __main__ - INFO - src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-09 23:35:48,864 - __main__ - INFO - Default filename name is: data/raw/RRB_datasets/RRB_Demo_for cs.xlsx.csv
+2023-06-09 23:35:48,869 - __main__ - INFO - F_Gluc renamed to F_Gluc
+2023-06-09 23:35:48,875 - __main__ - INFO - ./data/onboarded/RRB-Demo-for_cs saved successfully
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - Subject
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - Consentdate
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - ScreenDate
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - ScreenID
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - Age
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - Gender
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - Ethnicity 1
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - Ethnicity 2
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - F_Gluc
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - V_Gluc
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - V_Ins
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - HOMA
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - IR/R
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - BodyTemp
+2023-06-09 23:35:48,875 - __main__ - INFO - Data_finalized: Column present - Height1
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Height2
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - HeightM
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - HtM_m2
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Weight1
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Weight2
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - WeightM
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - BMI
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist1_1
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist1_2
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist1_M
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist2_1
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist2_2
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist2_M
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist3_1
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist3_2
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Waist3_M
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Sys1
+2023-06-09 23:35:48,876 - __main__ - INFO - Data_finalized: Column present - Sys2
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - Sys3
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - SysM
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - Dia1
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - Dia2
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - Dia3
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - DiaM
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - HR1
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - HR2
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - HR3
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - HRM
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - QC1
+2023-06-09 23:35:48,877 - __main__ - INFO - Data_finalized: Column present - QC2
