@@ -4,6 +4,7 @@ import os
 import pandas as pd
 from ydata_profiling import ProfileReport
 from difflib import get_close_matches
+from datetime import datetime
 
 
 log_dir="./logs"
@@ -78,10 +79,40 @@ def get_new_filename(data_filename):
         logger.info(f"New file name of {data_filename} is : {data_filenewname}")
     return data_filenewname 
 
+def get_rename_map(Data_key_map):
+    data_key_map_list = []
+    data_key_map_dict = {}
+    for i in range(len(Data_key_map)):
+        data_key_map_list.append(Data_key_map['Column Name'][i].lower())
+        if type(Data_key_map['Alternate Name'][i]) == str:
+            if ',' in Data_key_map['Alternate Name'][i]:
+                # print(Data_key_map['Alternate Name'][i].lower().split(','))
+                data_key_map_dict[Data_key_map['Column Name'][i]] = Data_key_map['Alternate Name'][i].lower().split(',')
+                data_key_map_list.extend(Data_key_map['Alternate Name'][i].lower().split(','))
+            else:
+                data_key_map_list.append(Data_key_map['Alternate Name'][i].lower())
+                data_key_map_dict[Data_key_map['Column Name'][i]] = Data_key_map['Alternate Name'][i].lower()
+    return data_key_map_list, data_key_map_dict
+
+def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
+    # Standardise column feature which will standardise the column names from alternate names to the column name
+    data_columns_list = list(dataframe.columns)
+
+    for i in range(len(data_columns_list)):
+        if data_columns_list[i].lower() in data_key_map_dict.values():
+            # Get the key for the value in the dictionary corresponding to the column name
+            replace_key = list(data_key_map_dict.keys())[list(data_key_map_dict.values()).index(data_columns_list[i].lower())]
+            dataframe.rename(columns={f"{dataframe.columns[i]}": f"{replace_key}"}, inplace=True)
+            logger.info(f"{dataframe.columns[i]} renamed to {replace_key}")
+    return dataframe
+
 def validate_datatype(dataframe, dataframe_name, exist_cols, data_key_map_list, option, Data_key_map):
-    for c in exist_cols:
+    print(Data_key_map)
+    all_columns = dataframe.columns 
+    for c in all_columns:
         dtype = dataframe[c].dtype
-        logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
+        if c not in exist_cols:
+            logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
         
 
 def main():
@@ -106,6 +137,7 @@ def main():
     # Get the current working directory
     current_directory = os.getcwd()
     
+    
     # Get the path to the file
     # data_path = os.path.join(current_directory, f'data/raw/{data_filename}')
     if "data/raw/" not in data_filename:
@@ -128,30 +160,12 @@ def main():
     
     # Read the new file name from the user or press enter to continue with the same file name
     data_filenewname = get_new_filename(data_filename)
-
-
-    data_key_map_list = []
-    data_key_map_dict = {}
-    for i in range(len(Data_key_map)):
-        data_key_map_list.append(Data_key_map['Column Name'][i].lower())
-        if type(Data_key_map['Alternate Name'][i]) == str:
-            if ',' in Data_key_map['Alternate Name'][i]:
-                # print(Data_key_map['Alternate Name'][i].lower().split(','))
-                data_key_map_dict[Data_key_map['Column Name'][i]] = Data_key_map['Alternate Name'][i].lower().split(',')
-                data_key_map_list.extend(Data_key_map['Alternate Name'][i].lower().split(','))
-            else:
-                data_key_map_list.append(Data_key_map['Alternate Name'][i].lower())
-                data_key_map_dict[Data_key_map['Column Name'][i]] = Data_key_map['Alternate Name'][i].lower()
-
-    # Standardise column feature which will standardise the column names from alternate names to the column name
-    data_columns_list = list(Data_finalized.columns)
-
-    for i in range(len(data_columns_list)):
-        if data_columns_list[i].lower() in data_key_map_dict.values():
-            # Get the key for the value in the dictionary corresponding to the column name
-            replace_key = list(data_key_map_dict.keys())[list(data_key_map_dict.values()).index(data_columns_list[i].lower())]
-            Data_finalized.rename(columns={f"{Data_finalized.columns[i]}": f"{replace_key}"}, inplace=True)
-            logger.info(f"{Data_finalized.columns[i]} renamed to {replace_key}")
+    
+    # get the rename list from the key map
+    data_key_map_list, data_key_map_dict = get_rename_map(Data_key_map)
+    
+    # Standardising column names
+    Data_finalized = standardise_names(Data_finalized, data_key_map_list, data_key_map_dict)
     
     # Save the file with the new name and the standardized column names in the onboarding folder
     Data_finalized.to_csv(f"{onboarded_dir}/{data_filenewname}.csv", index=False)
@@ -164,7 +178,11 @@ def main():
     
     # Close logger and rename log file
     file_handler.close()
-    new_log_filename = f'data_validation-{data_filenewname}.log'
+    # Get the current timestamp
+    timestamp = datetime.now()
+    # Format the timestamp to remove the delimiter
+    formatted_timestamp = timestamp.strftime("%Y%m%d%H%M")
+    new_log_filename = f'data_validation-{data_filenewname}-{formatted_timestamp}.log'
     new_log_file_path = os.path.join(log_dir, new_log_filename)
     os.rename(f"{log_dir}/{default_log_name}", new_log_file_path)
 
