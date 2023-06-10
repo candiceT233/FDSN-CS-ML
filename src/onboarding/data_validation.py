@@ -1,6 +1,7 @@
 
 import argparse
 import os
+import sys 
 import pandas as pd
 from ydata_profiling import ProfileReport
 from difflib import get_close_matches
@@ -42,12 +43,13 @@ def validate_match_keys(dataframe, dataframe_name, data_key_map_list, option, Da
                     logger.info(f"{dataframe_name}: Close matches - {close_match}")
         elif option in [0]:
             exist_cols.append(dataframe.columns[i])
-            # logger.info(f"{dataframe_name}: Columns which are present - {dataframe.columns[i]}")
-    logger.info(f"{dataframe_name}: Columns which are present - {exist_cols}\n")
+            logger.info(f"{dataframe_name}: Column present - {dataframe.columns[i]}")
+        
     new_cols_str = ""
     for nc in new_cols:
         new_cols_str+=str(nc) + ", "
-    logger.info(f"{dataframe_name}: Columns which are not present - {new_cols_str}\n")
+    if new_cols_str != "":
+        logger.info(f"{dataframe_name}: Columns which are not present - {new_cols_str}\n")
 
     return exist_cols
 
@@ -106,37 +108,43 @@ def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
             logger.info(f"{dataframe.columns[i]} renamed to {replace_key}")
     return dataframe
 
-def validate_datatype(dataframe, dataframe_name, exist_cols, data_key_map_list, option, Data_key_map):
+def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_filenewname):
     print(Data_key_map)
-    all_columns = dataframe.columns 
-    for c in all_columns:
-        dtype = dataframe[c].dtype
-        if c not in exist_cols:
-            logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
-        
 
-def main():
-    # write the logs to a file
-    file_handler = logging.FileHandler(f'{log_dir}/{default_log_name}')
-    
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
 
+def parsing_arguments():
+    # Start the argument parser
     parser = argparse.ArgumentParser()
     parser.add_argument('--newdata', type=str, help='File name of the new data') #TODO: make this required
     parser.add_argument('--keymap', type=str, help='File name of the key map') #TODO: make this required
     parser.add_argument('--loglevel', type=int, help='Logging level (0 - log everything, 1 - log close mathches and not present, 2 - log only close matches, 3 - log nothing))', default=0)
+    parser.add_argument('--logtime', type=int, help='Log file timestamp (0 - no timestamp, 1 - timestamp)', default=1)
     args = parser.parse_args()
+    
+    # Check if no arguments were provided
+    if len(sys.argv[1:]) == 0:
+        parser.print_help()
+        parser.exit()
+    
+    if not args.newdata or not args.keymap:
+        parser.print_help()
+        sys.exit(1)
 
     # Access the file paths using the argument names
-    data_filename = args.newdata
-    keymap_filename = args.keymap
-    loglevel = args.loglevel
+    return args.newdata, args.keymap, args.loglevel, args.logtime
+
+def main():
+    # Initialize logger and start file handler
+    file_handler = logging.FileHandler(f'{log_dir}/{default_log_name}')
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+    
+    # Parse the arguments
+    data_filename,keymap_filename,loglevel,logtime = parsing_arguments()
 
     # Get the current working directory
     current_directory = os.getcwd()
-    
     
     # Get the path to the file
     # data_path = os.path.join(current_directory, f'data/raw/{data_filename}')
@@ -174,15 +182,18 @@ def main():
     exist_cols = validate_match_keys(Data_finalized, "Data_finalized", data_key_map_list, loglevel, Data_key_map)
 
     #TODO: Add the code to validate the data types
-    validate_datatype(Data_finalized, "Datatype_validate", exist_cols, data_key_map_list, loglevel, Data_key_map)
+    validate_datatype(Data_finalized, "Datatype_validate", exist_cols, Data_key_map, data_filenewname)
     
     # Close logger and rename log file
     file_handler.close()
     # Get the current timestamp
     timestamp = datetime.now()
     # Format the timestamp to remove the delimiter
-    formatted_timestamp = timestamp.strftime("%Y%m%d%H%M")
-    new_log_filename = f'data_validation-{data_filenewname}-{formatted_timestamp}.log'
+    if logtime == 1:
+        formatted_timestamp = timestamp.strftime("%Y%m%d%H%M")
+        new_log_filename = f'data_validation-{data_filenewname}-{formatted_timestamp}.log'
+    else:
+        new_log_filename = f'data_validation-{data_filenewname}.log'
     new_log_file_path = os.path.join(log_dir, new_log_filename)
     os.rename(f"{log_dir}/{default_log_name}", new_log_file_path)
 
