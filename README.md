@@ -55,11 +55,12 @@ How to run the onboarding tool:
 
 - Run the below python command to trigger the onboarding tool.
 
-        python src/onboarding/data_validation.py --newdata <data_set name>  --keymap Data_Key-Map.xlsx --loglevel 1
+        python src/onboarding/data_validation.py --newdata <data_set path>  --keymap Data_Key-Map.xlsx --loglevel 1
+         
 
 Example:
 
-    python src/onboarding/data_validation.py --newdata MMTT_FRTS_.xlsx  --keymap Data_Key-Map.xlsx --loglevel 1
+    python3 src/onboarding/data_validation.py --newdata data/raw/RRB_datasets/RRB_Demo_for\ cs.xlsx --keymap Data_Key-Map.xlsx
 
 Sample Output:
 ----
