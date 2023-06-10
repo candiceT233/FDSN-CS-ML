@@ -21,28 +21,68 @@ def remove_extension(file_name):
     if extension.lower() in ['.csv', '.xlsx']:
         return base_name
     else:
-        return file_name
+        return base_name
     
 # Function to match the simillar or nearlly simillar keys in the dataset and the dictionary and log them
 def validate_match_keys(dataframe, dataframe_name, data_key_map_list, option, Data_key_map):
     """
     This function matches the simillar or nearly simillar keys in the dataset and the dictionary and log them
     """
+    new_cols = []
+    exist_cols = []
     for i in range(len(dataframe.columns)):
         if dataframe.columns[i].lower() not in data_key_map_list:
             if option in [0, 1]:
-                logger.info(f"{dataframe_name}: Columns which are not present - {dataframe.columns[i]}")
+                new_cols.append(dataframe.columns[i])
+                logger.info(f"{dataframe_name}: Column not present - {dataframe.columns[i]}")
             if option in [0, 1, 2]:
-                logger.info(f"{dataframe_name}: Close matches - {get_close_matches(str(dataframe.columns[i]), str(data_key_map_list), n=1, cutoff=0.7)}")
+                close_match = get_close_matches(str(dataframe.columns[i]), str(data_key_map_list), n=1, cutoff=0.7)
+                if close_match:
+                    logger.info(f"{dataframe_name}: Close matches - {close_match}")
         elif option in [0]:
-                logger.info(f"{dataframe_name}: Columns which are present - {dataframe.columns[i]}")
+            exist_cols.append(dataframe.columns[i])
+            # logger.info(f"{dataframe_name}: Columns which are present - {dataframe.columns[i]}")
+    logger.info(f"{dataframe_name}: Columns which are present - {exist_cols}\n")
+    new_cols_str = ""
+    for nc in new_cols:
+        new_cols_str+=str(nc) + ", "
+    logger.info(f"{dataframe_name}: Columns which are not present - {new_cols_str}\n")
 
-    return None
+    return exist_cols
+
 
 # Function to generate a pandas-profiling report for the initial EDA
 def generateReport(dataframe, name):
     profile= ProfileReport(dataframe, explorative=True)
     profile.to_file(f'{name}_report.html')
+
+def get_new_filename(data_filename):
+    tmp_filename = input("Enter the new name for the file: ")
+    if tmp_filename == "":
+        tmp_filename = data_filename.split("/")[-1]
+        tmp_filename = os.path.splitext(tmp_filename)[0]
+        tmp_filename = tmp_filename.replace(" ","_")
+        tmp_filename = tmp_filename.split("_")
+        data_filenewname = ""
+        if 'MMTT' in tmp_filename[0]:
+            data_filenewname += tmp_filename.pop(0) + "_"
+        data_filenewname+=tmp_filename.pop(0) + "-"
+        data_filenewname+=tmp_filename.pop(0) + "-"
+        for rest_ss in tmp_filename:
+            data_filenewname+= rest_ss + "_"
+        data_filenewname = data_filenewname[0: len(data_filenewname)-1]
+            
+        logger.info(f"Default filename name is: {data_filename}.csv")
+    else:
+        data_filenewname = remove_extension(tmp_filename)
+        logger.info(f"New file name of {data_filename} is : {data_filenewname}")
+    return data_filenewname 
+
+def validate_datatype(dataframe, dataframe_name, exist_cols, data_key_map_list, option, Data_key_map):
+    for c in exist_cols:
+        dtype = dataframe[c].dtype
+        logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
+        
 
 def main():
     # write the logs to a file
@@ -53,8 +93,8 @@ def main():
     logger.addHandler(file_handler)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--newdata', type=str, help='File name of the new data')
-    parser.add_argument('--keymap', type=str, help='File name of the key map')
+    parser.add_argument('--newdata', type=str, help='File name of the new data') #TODO: make this required
+    parser.add_argument('--keymap', type=str, help='File name of the key map') #TODO: make this required
     parser.add_argument('--loglevel', type=int, help='Logging level (0 - log everything, 1 - log close mathches and not present, 2 - log only close matches, 3 - log nothing))', default=0)
     args = parser.parse_args()
 
@@ -84,14 +124,11 @@ def main():
     # Option for the user to change the file name by displaying the current file name and the example format
     print(f"Current file name: {data_filename}")
     print("Example format: [study_name]-[data_type]-[suffix].csv")
+    
+    
     # Read the new file name from the user or press enter to continue with the same file name
-    data_filenewname = input("Enter the new name for the file: ")
-    if data_filenewname == "":
-        data_filenewname = data_filename
-        logger.info(f"File name of {data_filename} is not changed")
-    else:
-        data_filenewname = remove_extension(data_filenewname)
-        logger.info(f"New file name of {data_filename} is : {data_filenewname}")
+    data_filenewname = get_new_filename(data_filename)
+
 
     data_key_map_list = []
     data_key_map_dict = {}
@@ -120,10 +157,10 @@ def main():
     Data_finalized.to_csv(f"{onboarded_dir}/{data_filenewname}.csv", index=False)
     logger.info(f"{onboarded_dir}/{data_filenewname} saved successfully")
 
-    validate_match_keys(Data_finalized, "Data_finalized", data_key_map_list, loglevel, Data_key_map)
+    exist_cols = validate_match_keys(Data_finalized, "Data_finalized", data_key_map_list, loglevel, Data_key_map)
 
     #TODO: Add the code to validate the data types
-    
+    validate_datatype(Data_finalized, "Datatype_validate", exist_cols, data_key_map_list, loglevel, Data_key_map)
     
     # Close logger and rename log file
     file_handler.close()
