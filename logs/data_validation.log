@@ -1,6 +1,0 @@
-2023-05-18 19:57:36,028 - __main__ - INFO - MMTT_FRTS_.xlsx read successfully
-2023-05-18 19:57:36,055 - __main__ - INFO - Data_Key-Map.xlsx read successfully
-2023-05-18 19:57:37,627 - __main__ - INFO - File name of MMTT_FRTS_.xlsx is not changed
-2023-05-18 19:57:37,630 - __main__ - INFO - Subject renamed to Subject
-2023-05-18 19:57:37,631 - __main__ - INFO - Sequence renamed to Sequence
-2023-05-18 19:57:37,698 - __main__ - INFO - data/onboarded/MMTT_FRTS_.xlsx saved successfully
