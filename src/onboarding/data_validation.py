@@ -196,7 +196,7 @@ def main():
 
     exist_cols = validate_match_keys(Data_finalized, "Data_finalized", data_key_map_list, loglevel, Data_key_map)
 
-    #TODO: Add the code to validate the data types
+    # Validate the data types
     validate_datatype(Data_finalized, "Datatype_validate", exist_cols, Data_key_map, data_filenewname)
     
     # Close logger and rename log file
