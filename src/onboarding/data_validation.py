@@ -93,20 +93,26 @@ def get_rename_map(Data_key_map):
                 data_key_map_list.extend(Data_key_map['Alternate Name'][i].lower().split(','))
             else:
                 data_key_map_list.append(Data_key_map['Alternate Name'][i].lower())
-                data_key_map_dict[Data_key_map['Column Name'][i]] = Data_key_map['Alternate Name'][i].lower()
+                data_key_map_dict[Data_key_map['Column Name'][i]] = [Data_key_map['Alternate Name'][i].lower()]
     return data_key_map_list, data_key_map_dict
 
 def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
     # Standardise column feature which will standardise the column names from alternate names to the column name
     data_columns_list = list(dataframe.columns)
-
+        
     for i in range(len(data_columns_list)):
-        column_name = data_columns_list[i].lower()
-        if column_name in data_key_map_dict.values():
-            # Get the key for the value in the dictionary corresponding to the column name
-            replace_key = list(data_key_map_dict.keys())[list(data_key_map_dict.values()).index(column_name)]
-            dataframe.rename(columns={f"{dataframe.columns[i]}": f"{replace_key}"}, inplace=True)
-            logger.info(f"{dataframe.columns[i]} renamed to {replace_key}")
+        column_name = data_columns_list[i]        
+        for standard_key, value_list in data_key_map_dict.items():
+            if column_name.lower() in value_list:
+                dataframe.rename(columns={f"{column_name}": f"{standard_key}"}, inplace=True)
+                logger.info(f" [{column_name}] renamed to [{standard_key}]")
+                
+        # if column_name in data_key_map_dict.values():
+        #     # Get the key for the value in the dictionary corresponding to the column name
+        #     replace_key = list(data_key_map_dict.keys())[list(data_key_map_dict.values()).index(column_name)]
+        #     dataframe.rename(columns={f"{dataframe.columns[i]}": f"{replace_key}"}, inplace=True)
+        #     logger.info(f" [{column_name}] renamed to [{replace_key}]")
+
     return dataframe
 
 def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_filenewname):
@@ -124,9 +130,17 @@ def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_f
                     logger.info(f"{dataframe_name}: Column [{c}] expected type [{expect_dtype}] but actual type - {dtype}")
                     
                     # update the data type mismatch file
-                    orig_files = str(row['Data_type_Mismatch File'].values[0])
-                    orig_files += str(data_filenewname)+","
-                    Data_key_map.loc[Data_key_map['Column Name'] == c, 'Data_type_Mismatch File'] = orig_files
+                    all_files = ""
+                    org_files = str(row['Data_type_Mismatch File'].values[0]).split(",")
+                    # update only if not already in Data_Key-Map
+                    if data_filenewname not in org_files:
+                        if org_files:
+                            for org_file in org_files:
+                                if org_file != "nan":
+                                    all_files+=str(org_file)+","
+                        all_files += str(data_filenewname)+","
+                        print(all_files)
+                        Data_key_map.loc[Data_key_map['Column Name'] == c, 'Data_type_Mismatch File'] = all_files
 
 def parsing_arguments():
     # Start the argument parser
@@ -279,12 +293,12 @@ def main():
     if "src/onboarding/" not in keymap_filename:
         keymap_filename = f"src/onboarding/{keymap_filename}"
     data_path = os.path.join(current_directory, f'{data_filename}')
-    Data_key_map = os.path.join(current_directory, f'{keymap_filename}')
+    Data_key_map_path = os.path.join(current_directory, f'{keymap_filename}')
 
     # Read the data
     # Data_finalized = pd.read_excel(data_path)
     # logger.info(f"{data_filename} read successfully")
-    Data_key_map = pd.read_excel(Data_key_map)
+    Data_key_map = pd.read_excel(Data_key_map_path)
     Data_finalized = read_sheet_from_excel(data_path, data_filename, Data_key_map)
     logger.info(f"{keymap_filename} read successfully")
 
@@ -298,6 +312,8 @@ def main():
     
     # get the rename list from the key map
     data_key_map_list, data_key_map_dict = get_rename_map(Data_key_map)
+    # print(f"Data key map list: {data_key_map_list}")
+    # print(f"Data key map dict: {data_key_map_dict}")
     
     # Standardising column names
     Data_finalized = standardise_names(Data_finalized, data_key_map_list, data_key_map_dict)
@@ -310,6 +326,9 @@ def main():
 
     # Validate the data types
     validate_datatype(Data_finalized, "Datatype_validate", exist_cols, Data_key_map, data_filenewname)
+    
+    # update Data_key_map
+    Data_key_map.to_excel(Data_key_map_path, index=False)
     
     # Close logger and rename log file
     file_handler.close()
