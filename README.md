@@ -79,4 +79,7 @@ INFO:__main__:data/onboarded/MMTT_FRTS_.xlsx saved successfully
 
 --------
 
+Adding Entry to Data_Key-Map.xlsx:
+   When adding a new row to this excel sheet, the `Column Name` and the `Expected_Data_type` is required.
+
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
