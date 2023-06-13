@@ -1,0 +1,38 @@
+RF_MMTT_AVOC1_IL6_Data_Final_choose_A_.csv  Features:  
+['consent date ', 'screen date', 'screenid', 'age', 'gender', 'ethnicity 1', 'visit', 'body temp', 'capillarygluc', 'venous glen', ' insulin', 'heightm', 'htm_m2', 'weightm', 'bmi', 'waist1_m', 'waist2_m', 'waist3_m', 'sysm', 'diam', 'hrm', 'ethnic', 'sex', 'bmicat', 'seq', 'trx', 'tx_actual', 'time', 'time1']
+RF_MMTT_AVOC1_IL6_Data_Final_choose_A_.csv  Variables:  
+['il6', 'il6b', 'il6n', 'qc1', 'qc2']
+---
+
+RF_MMTT_AVOC1_MET_FINAL_Choose_A.csv  Features:  
+['consent date ', 'screen date', 'screenid', 'age', 'gender', 'ethnicity 1', 'visit', 'body temp', 'capillarygluc', 'venous glen', ' insulin', 'heightm', 'htm_m2', 'weightm', 'bmi', 'waist1_m', 'waist2_m', 'waist3_m', 'sysm', 'diam', 'hrm', 'ethnic', 'sex', 'seq', 'tx', 'tx_actual', 'time', 'time1']
+RF_MMTT_AVOC1_MET_FINAL_Choose_A.csv  Variables:  
+['tg', 'tgb', 'glc', 'glc_b', 'ins', 'ins_b']
+---
+
+RF_MMTT_AVOC1_OxLDL_MCP_Final_SAS_choose_A.csv  Features:  
+['consent date ', 'screen date', 'screenid', 'age', 'gender', 'ethnicity 1', 'visit', 'body temp', 'capillarygluc', 'venous glen', ' insulin', 'heightm', 'htm_m2', 'weightm', 'bmi', 'waist1_m', 'waist2_m', 'waist3_m', 'sysm', 'diam', 'hrm', 'ethnic', 'sex', 'bmicat', 'seq', 'tx', 'tx2', 'time', 'time1']
+RF_MMTT_AVOC1_OxLDL_MCP_Final_SAS_choose_A.csv  Variables:  
+['oxldl', 'oxldlb', 'oxldln', 'logoxldl', 'mcp1', 'mcp1b', 'mcp1n', 'logmcp1', 'tnf', 'tnfb', 'tnfn', 'logtnf']
+---
+
+RF_MMTT_AVOC1_NMR_LIPIDS_choose_A_Final.csv  Features:  
+['consent date ', 'screen date', 'screenid', 'age', 'gender', 'ethnicity 1', 'visit', 'body temp', 'capillarygluc', 'venous glen', ' insulin', 'heightm', 'htm_m2', 'weightm', 'bmi', 'waist1_m', 'waist2_m', 'waist3_m', 'sysm', 'diam', 'hrm', 'ethnic', 'sex', 'seq', 'tx', 'tx_act', 'time', 'time2']
+RF_MMTT_AVOC1_NMR_LIPIDS_choose_A_Final.csv  Variables:  
+['vldlcp3', 'vldlcp_b', 'vlcp3', 'vlcp_b', 'vmp3', 'vmp3_b', 'vsp3', 'vsp3_b', 'ldlp3', 'ldlp3_b', 'idlp3', 'idlp3_b', 'llp3', 'llp3_b', 'lsp3', 'lsp3_b', 'hdlp3', 'hdlp3_b', 'hlp3', 'hlp3_b', 'hmp3', 'hmp3_b', 'hsp3', 'hsp3_b', 'vz3', 'vz3_b', 'lz3', 'lz3_b', 'hz3', 'hz3_b', 'ntg3', 'ntg3_b', 'nvctg3', 'nvctg_b', 'nhc3', 'nhc3_b']
+---
+
+RF_MMTT_AVOC1_VAS_Final_n31_SAS_with_GUT_peptides.csv  Features:  
+['consent date ', 'screen date', 'screenid', 'age', 'gender', 'ethnicity 1', 'visit', 'body temp', 'capillarygluc', 'venous glen', ' insulin', 'heightm', 'htm_m2', 'weightm', 'bmi', 'waist1_m', 'waist2_m', 'waist3_m', 'sysm', 'diam', 'hrm', 'ethnic', 'sex', 'bmicat', 'tx', 'tx2', 'seq', 'time', 'time1']
+RF_MMTT_AVOC1_VAS_Final_n31_SAS_with_GUT_peptides.csv  Variables:  
+['hung', 'hungb', 'hungn', 'full', 'fullb', 'fulln', 'des', 'desb', 'desn', 'amt', 'amtb', 'amtn', 'thirst', 'thirstb', 'thirstn', 'naus', 'nausb', 'nausn', 'satis', 'satisb', 'satisn', 'alert', 'alertb', 'altern', 'tired', 'tiredb', 'tiredn', 'glp (pg/ml)', 'glpb', 'glpn', 'pyy ((pg/ml)', 'pyyb', 'pyyn', 'gherelin (pg/ml)', 'gherelinb', 'gherelinn']
+---
+
+RF_MMTT_AVOC1_MERGED_ALL.csv  Features:  
+['subject', 'consent date ', 'screen date', 'screenid', 'age', 'gender', 'ethnicity 1', 'visit', 'body temp', 'capillarygluc', 'venous glen', ' insulin', 'heightm', 'htm_m2', 'weightm', 'bmi', 'waist1_m', 'waist2_m', 'waist3_m', 'sysm', 'diam', 'hrm', 'bmi_IL6', 'bmicat_IL6', 'seq_IL6', 'trx', 'tx_actual_IL6', 'visit_IL6', 'time_IL6', 'qc2', 'bmi_MET', 'tx_MET', 'tx_actual_MET', 'visit_MET', 'time1_MET', 'tg', 'tx_OxLDL_MCP', 'visit_OxLDL_MCP', 'tx_NMR_LIPIDS', 'tx_act_NMR_LIPIDS', 'visit_NMR_LIPIDS', 'tx_VAS_Final_n31_SAS_with_GUT_peptides', 'visit_VAS_Final_n31_SAS_with_GUT_peptides']
+---
+
+RF_MMTT_AVOC1_MERGED_ALL.csv  Variables:  
+['il6', 'il6b', 'il6n', 'qc1', 'tgb', 'glc', 'glc_b', 'ins', 'ins_b', 'oxldl', 'oxldlb', 'oxldln', 'logoxldl', 'mcp1', 'mcp1b', 'mcp1n', 'logmcp1', 'tnf', 'tnfb', 'tnfn', 'logtnf', 'vldlcp3', 'vldlcp_b', 'vlcp3', 'vlcp_b', 'vmp3', 'vmp3_b', 'vsp3', 'vsp3_b', 'ldlp3', 'ldlp3_b', 'idlp3', 'idlp3_b', 'llp3', 'llp3_b', 'lsp3', 'lsp3_b', 'hdlp3', 'hdlp3_b', 'hlp3', 'hlp3_b', 'hmp3', 'hmp3_b', 'hsp3', 'hsp3_b', 'vz3', 'vz3_b', 'lz3', 'lz3_b', 'hz3', 'hz3_b', 'ntg3', 'ntg3_b', 'nvctg3', 'nvctg_b', 'nhc3', 'nhc3_b', 'hung', 'hungb', 'hungn', 'full', 'fullb', 'fulln', 'des', 'desb', 'desn', 'amt', 'amtb', 'amtn', 'thirst', 'thirstb', 'thirstn', 'naus', 'nausb', 'nausn', 'satis', 'satisb', 'satisn', 'alert', 'alertb', 'altern', 'tired', 'tiredb', 'tiredn', 'glp (pg/ml)', 'glpb', 'glpn', 'pyy ((pg/ml)', 'pyyb', 'pyyn', 'gherelin (pg/ml)', 'gherelinb', 'gherelinn']
+
+
