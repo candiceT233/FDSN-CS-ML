@@ -106,12 +106,6 @@ def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
             if column_name.lower() in value_list:
                 dataframe.rename(columns={f"{column_name}": f"{standard_key}"}, inplace=True)
                 logger.info(f" [{column_name}] renamed to [{standard_key}]")
-                
-        # if column_name in data_key_map_dict.values():
-        #     # Get the key for the value in the dictionary corresponding to the column name
-        #     replace_key = list(data_key_map_dict.keys())[list(data_key_map_dict.values()).index(column_name)]
-        #     dataframe.rename(columns={f"{dataframe.columns[i]}": f"{replace_key}"}, inplace=True)
-        #     logger.info(f" [{column_name}] renamed to [{replace_key}]")
 
     return dataframe
 
@@ -287,7 +281,6 @@ def main():
     current_directory = os.getcwd()
     
     # Get the path to the file
-    # data_path = os.path.join(current_directory, f'data/raw/{data_filename}')
     if "data/raw/" not in data_filename:
         data_filename = f"data/raw/{data_filename}"
     if "src/onboarding/" not in keymap_filename:
@@ -296,16 +289,13 @@ def main():
     Data_key_map_path = os.path.join(current_directory, f'{keymap_filename}')
 
     # Read the data
-    # Data_finalized = pd.read_excel(data_path)
-    # logger.info(f"{data_filename} read successfully")
     Data_key_map = pd.read_excel(Data_key_map_path)
-    Data_finalized = read_sheet_from_excel(data_path, data_filename, Data_key_map)
     logger.info(f"{keymap_filename} read successfully")
+    Data_finalized = read_sheet_from_excel(data_path, data_filename, Data_key_map)
 
     # Option for the user to change the file name by displaying the current file name and the example format
     print(f"Current file name: {data_filename}")
     print("Example format: [study_name]-[data_type]-[suffix].csv")
-    
     
     # Read the new file name from the user or press enter to continue with the same file name
     data_filenewname = get_new_filename(data_filename)
