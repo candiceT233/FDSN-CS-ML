@@ -36,20 +36,20 @@ def validate_match_keys(dataframe, dataframe_name, data_key_map_list, option, Da
         if dataframe.columns[i].lower() not in data_key_map_list:
             if option in [0, 1]:
                 new_cols.append(dataframe.columns[i])
-                logger.info(f"{dataframe_name}: Column not present - {dataframe.columns[i]}")
+                # logger.info(f"{dataframe_name}: Column not present - {dataframe.columns[i]}")
             if option in [0, 1, 2]:
                 close_match = get_close_matches(str(dataframe.columns[i]), str(data_key_map_list), n=1, cutoff=0.7)
                 if close_match:
-                    logger.info(f"{dataframe_name}: Close matches - {close_match}")
+                    logger.info(f"{dataframe_name}: CLOSE-MATCH to Column [{dataframe.columns[i]}] - {close_match}")
         elif option in [0]:
             exist_cols.append(dataframe.columns[i])
-            logger.info(f"{dataframe_name}: Column present - {dataframe.columns[i]}")
+            logger.info(f"{dataframe_name}: PRESENT Column - {dataframe.columns[i]}")
         
     new_cols_str = ""
     for nc in new_cols:
         new_cols_str+=str(nc) + ", "
     if new_cols_str != "":
-        logger.info(f"{dataframe_name}: Columns which are not present - {new_cols_str}\n")
+        logger.info(f"{dataframe_name}: NOT-PRESENT Columns - {new_cols_str}\n")
 
     return exist_cols
 
@@ -114,14 +114,14 @@ def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_f
     for c in all_columns:
         dtype = str(dataframe[c].dtype)
         if c not in exist_cols:
-            logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
+            logger.info(f"{dataframe_name}: NEWTYPE - Column [{c}] data type - {dtype}")
         else:
             # expect_dtype = Data_key_map[Data_key_map['Column Name'] == c]['Expected_Data_type']
             row = Data_key_map[Data_key_map['Column Name'] == c]
             if not row.empty:
                 expect_dtype = row['Expected_Data_type'].values[0]
                 if expect_dtype != dtype:
-                    logger.info(f"{dataframe_name}: Column [{c}] expected type [{expect_dtype}] but actual type - {dtype}")
+                    logger.info(f"{dataframe_name}: MISMATCH - Column [{c}] expected type [{expect_dtype}] but actual type - {dtype}")
                     
                     # update the data type mismatch file
                     all_files = ""

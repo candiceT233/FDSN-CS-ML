@@ -1,5 +1,7 @@
 # data file
 *.csv
+*.xlsx
+*.xls
 
 # logs
 logs/
