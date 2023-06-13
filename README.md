@@ -3,6 +3,58 @@ FDSN-CS
 
 Illinois Tech SCS lab collaboration with FDSN department on human nutrition studies.
 
+
+
+How to run the onboarding tool:
+------------
+
+- Clone the git repo with the below command:
+
+        git clone https://github.com/candiceT233/FDSN-CS.git
+
+- Go to the FDSN-CS project folder 
+
+- Download the datasets from the drive and save it to the data/raw folder.
+
+- Run the below python command to trigger the onboarding tool.
+
+        python src/onboarding/data_validation.py --newdata <data_set path>  --keymap Data_Key-Map.xlsx --loglevel 1
+         
+
+Example:
+
+    python3 src/onboarding/data_validation.py --newdata data/raw/RRB_datasets/RRB_Demo_for\ cs.xlsx --keymap Data_Key-Map.xlsx
+
+Sample Output:
+----
+
+```
+INFO:__main__:MMTT_FRTS_.xlsx read successfully
+INFO:__main__:Data_Key-Map.xlsx read successfully
+Current file name: MMTT_FRTS_.xlsx
+Example format: [study_name]-[data_type]-[suffix].csv
+Enter the new name for the file: 
+INFO:__main__:File name of MMTT_FRTS_.xlsx is not changed
+INFO:__main__:Subject renamed to Subject
+INFO:__main__:Sequence renamed to Sequence
+INFO:__main__:data/onboarded/MMTT_FRTS_.xlsx saved successfully
+```
+
+Adding Entries to `Data_Key-Map.xlsx`:
+----
+
+- When a dataset is first seen by the `Data_Key-Map.xlsx`, it will log all the new column names and the datatype information
+
+- Manually adding the new variables to column names, alternative name, and datatype information is required.
+
+*** When adding new column name, make sure to check for existing column name to determine if it should be added to the alternative name. ***
+
+- When adding a new row to this excel sheet, the `Column Name` and the `Expected_Data_type` is required. 
+
+- It's a good practice to rename the `Data_Key-Map.xlsx` for version control.
+
+--------
+
 Project Organization
 ------------
 
@@ -41,45 +93,8 @@ Project Organization
         └── visualization  <- TODO: Scripts to create exploratory and results oriented visualizations
             └── visualize.py
      
-
-How to run the onboarding tool:
-------------
-
-- Clone the git repo with the below command:
-
-        git clone https://github.com/candiceT233/FDSN-CS.git
-
-- Go to the FDSN-CS project folder 
-
-- Download the datasets from the drive and save it to the data/raw folder.
-
-- Run the below python command to trigger the onboarding tool.
-
-        python src/onboarding/data_validation.py --newdata <data_set path>  --keymap Data_Key-Map.xlsx --loglevel 1
-         
-
-Example:
-
-    python3 src/onboarding/data_validation.py --newdata data/raw/RRB_datasets/RRB_Demo_for\ cs.xlsx --keymap Data_Key-Map.xlsx
-
-Sample Output:
-----
-
-```
-INFO:__main__:MMTT_FRTS_.xlsx read successfully
-INFO:__main__:Data_Key-Map.xlsx read successfully
-Current file name: MMTT_FRTS_.xlsx
-Example format: [study_name]-[data_type]-[suffix].csv
-Enter the new name for the file: 
-INFO:__main__:File name of MMTT_FRTS_.xlsx is not changed
-INFO:__main__:Subject renamed to Subject
-INFO:__main__:Sequence renamed to Sequence
-INFO:__main__:data/onboarded/MMTT_FRTS_.xlsx saved successfully
-```
-
 --------
 
-Adding Entry to Data_Key-Map.xlsx:
-   When adding a new row to this excel sheet, the `Column Name` and the `Expected_Data_type` is required.
+
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>

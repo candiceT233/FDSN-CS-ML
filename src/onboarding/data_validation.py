@@ -26,30 +26,35 @@ def remove_extension(file_name):
         return base_name
     
 # Function to match the simillar or nearlly simillar keys in the dataset and the dictionary and log them
-def validate_match_keys(dataframe, dataframe_name, data_key_map_list, option, Data_key_map):
+def validate_keys(dataframe, data_key_map_list, Data_key_map, loglevel):
     """
     This function matches the simillar or nearly simillar keys in the dataset and the dictionary and log them
     """
+    func_str=""
+    if loglevel in [0, 1]:
+        func_str=" validate_keys()"
+
     new_cols = []
     exist_cols = []
     for i in range(len(dataframe.columns)):
         if dataframe.columns[i].lower() not in data_key_map_list:
-            if option in [0, 1]:
+            if loglevel in [0, 1]:
                 new_cols.append(dataframe.columns[i])
-                # logger.info(f"{dataframe_name}: Column not present - {dataframe.columns[i]}")
-            if option in [0, 1, 2]:
+                # logger.info(f"{func_str}: Column not present - {dataframe.columns[i]}")
+            if loglevel in [0, 1, 2]:
                 close_match = get_close_matches(str(dataframe.columns[i]), str(data_key_map_list), n=1, cutoff=0.7)
                 if close_match:
-                    logger.info(f"{dataframe_name}: CLOSE-MATCH to Column [{dataframe.columns[i]}] - {close_match}")
-        elif option in [0]:
+                    logger.info(f"{func_str}: CLOSE-MATCH to Column [{dataframe.columns[i]}] - {close_match}")
+        elif loglevel in [0]:
             exist_cols.append(dataframe.columns[i])
-            logger.info(f"{dataframe_name}: PRESENT Column - {dataframe.columns[i]}")
-        
-    new_cols_str = ""
-    for nc in new_cols:
-        new_cols_str+=str(nc) + ", "
-    if new_cols_str != "":
-        logger.info(f"{dataframe_name}: NOT-PRESENT Columns - {new_cols_str}\n")
+            logger.info(f"{func_str}: PRESENT Column - {dataframe.columns[i]}")
+    
+    if loglevel in [0, 1]:
+        new_cols_str = ""
+        for nc in new_cols:
+            new_cols_str+=str(nc) + ", "
+        if new_cols_str != "":
+            logger.info(f"{func_str}: NOT-PRESENT Columns - {new_cols_str}\n")
 
     return exist_cols
 
@@ -75,10 +80,10 @@ def get_new_filename(data_filename):
             data_filenewname+= rest_ss + "_"
         data_filenewname = data_filenewname[0: len(data_filenewname)-1]
             
-        logger.info(f"Default filename name is: {data_filename}.csv")
+        logger.info(f" Default filename name is: {data_filename}.csv")
     else:
         data_filenewname = remove_extension(tmp_filename)
-        logger.info(f"New file name of {data_filename} is : {data_filenewname}")
+        logger.info(f" New file name of {data_filename} is : {data_filenewname}")
     return data_filenewname 
 
 def get_rename_map(Data_key_map):
@@ -96,7 +101,11 @@ def get_rename_map(Data_key_map):
                 data_key_map_dict[Data_key_map['Column Name'][i]] = [Data_key_map['Alternate Name'][i].lower()]
     return data_key_map_list, data_key_map_dict
 
-def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
+def standardise_names(dataframe,data_key_map_list,data_key_map_dict, loglevel):
+    func_str=""
+    if loglevel in [0, 1]:
+        func_str=" standardise_names()"
+        
     # Standardise column feature which will standardise the column names from alternate names to the column name
     data_columns_list = list(dataframe.columns)
         
@@ -105,23 +114,27 @@ def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
         for standard_key, value_list in data_key_map_dict.items():
             if column_name.lower() in value_list:
                 dataframe.rename(columns={f"{column_name}": f"{standard_key}"}, inplace=True)
-                logger.info(f" [{column_name}] renamed to [{standard_key}]")
+                logger.info(f"{func_str}: [{column_name}] renamed to [{standard_key}]")
 
     return dataframe
 
-def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_filenewname):
+def validate_datatypes(dataframe, exist_cols, Data_key_map,data_filenewname, loglevel):
+    func_str=""
+    if loglevel in [0, 1]:
+        func_str=" validate_datatypes()"
+        
     all_columns = dataframe.columns 
     for c in all_columns:
         dtype = str(dataframe[c].dtype)
         if c not in exist_cols:
-            logger.info(f"{dataframe_name}: NEWTYPE - Column [{c}] data type - {dtype}")
+            logger.info(f"{func_str}: NEWTYPE - Column [{c}] data type - {dtype}")
         else:
             # expect_dtype = Data_key_map[Data_key_map['Column Name'] == c]['Expected_Data_type']
             row = Data_key_map[Data_key_map['Column Name'] == c]
             if not row.empty:
                 expect_dtype = row['Expected_Data_type'].values[0]
                 if expect_dtype != dtype:
-                    logger.info(f"{dataframe_name}: MISMATCH - Column [{c}] expected type [{expect_dtype}] but actual type - {dtype}")
+                    logger.info(f"{func_str}: MISMATCH - Column [{c}] expected type [{expect_dtype}] but actual type - {dtype}")
                     
                     # update the data type mismatch file
                     all_files = ""
@@ -133,7 +146,7 @@ def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_f
                                 if org_file != "nan":
                                     all_files+=str(org_file)+","
                         all_files += str(data_filenewname)+","
-                        print(all_files)
+                        # print(all_files)
                         Data_key_map.loc[Data_key_map['Column Name'] == c, 'Data_type_Mismatch File'] = all_files
 
 def parsing_arguments():
@@ -260,11 +273,11 @@ def read_sheet_from_excel(data_path, data_file_path, Data_key_map):
             
         # Read the data from the sheet which is not a duplicate
         Data_finalized = read_excel_dataframe_only(data_path, existing_keys, sheet_name) # pd.read_excel(data_path, sheet_name=sheet_name)
-        logger.info(f"{data_filename} read successfully with the sheet name \"{sheet_name}\"")
+        logger.info(f" {data_filename} read successfully with the sheet name \"{sheet_name}\"")
     else:
         # Read the data
         Data_finalized = read_excel_dataframe_only(data_path, existing_keys)
-        logger.info(f"{data_filename} read successfully")
+        logger.info(f" {data_filename} read successfully")
     return Data_finalized
 
 def main():
@@ -290,7 +303,7 @@ def main():
 
     # Read the data
     Data_key_map = pd.read_excel(Data_key_map_path)
-    logger.info(f"{keymap_filename} read successfully")
+    logger.info(f" {keymap_filename} read successfully")
     Data_finalized = read_sheet_from_excel(data_path, data_filename, Data_key_map)
 
     # Option for the user to change the file name by displaying the current file name and the example format
@@ -306,16 +319,16 @@ def main():
     # print(f"Data key map dict: {data_key_map_dict}")
     
     # Standardising column names
-    Data_finalized = standardise_names(Data_finalized, data_key_map_list, data_key_map_dict)
+    Data_finalized = standardise_names(Data_finalized, data_key_map_list, data_key_map_dict, loglevel)
     
     # Save the file with the new name and the standardized column names in the onboarding folder
     Data_finalized.to_csv(f"{onboarded_dir}/{data_filenewname}.csv", index=False)
-    logger.info(f"{onboarded_dir}/{data_filenewname} saved successfully")
+    logger.info(f" {onboarded_dir}/{data_filenewname} saved successfully")
 
-    exist_cols = validate_match_keys(Data_finalized, "Data_finalized", data_key_map_list, loglevel, Data_key_map)
+    exist_cols = validate_keys(Data_finalized, data_key_map_list, Data_key_map, loglevel)
 
     # Validate the data types
-    validate_datatype(Data_finalized, "Datatype_validate", exist_cols, Data_key_map, data_filenewname)
+    validate_datatypes(Data_finalized, exist_cols, Data_key_map, data_filenewname, loglevel)
     
     # update Data_key_map
     Data_key_map.to_excel(Data_key_map_path, index=False)
