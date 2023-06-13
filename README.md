@@ -3,6 +3,33 @@ FDSN-CS
 
 Illinois Tech SCS lab collaboration with FDSN department on human nutrition studies.
 
+Project Overview
+------------
+The project focuses on data processing and modeling using machine learning techniques. It involves steps such as data onboarding, preprocessing, feature engineering, and model training and evaluation. Here is a simple overall diagram illustrating the flow of the project:
+
+              +-------------------+
+              |    Onboard Data   |
+              +-------------------+
+                        |
+                        v
+              +-------------------+
+              |   Preprocessing   |
+              +-------------------+
+                        |
+                        v
+              +-------------------+
+              | Feature Engineering|
+              +-------------------+
+                        |
+                        v
+              +-------------------+
+              |  Model Training   |
+              +-------------------+
+                        |
+                        v
+              +-------------------+
+              | Model Evaluation  |
+              +-------------------+
 
 
 How to run the onboarding tool:
@@ -54,6 +81,8 @@ Adding Entries to `Data_Key-Map.xlsx`:
 - It's a good practice to rename the `Data_Key-Map.xlsx` for version control.
 
 --------
+
+
 
 Project Organization
 ------------
