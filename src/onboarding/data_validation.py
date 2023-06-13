@@ -101,9 +101,10 @@ def standardise_names(dataframe,data_key_map_list,data_key_map_dict):
     data_columns_list = list(dataframe.columns)
 
     for i in range(len(data_columns_list)):
-        if data_columns_list[i].lower() in data_key_map_dict.values():
+        column_name = data_columns_list[i].lower()
+        if column_name in data_key_map_dict.values():
             # Get the key for the value in the dictionary corresponding to the column name
-            replace_key = list(data_key_map_dict.keys())[list(data_key_map_dict.values()).index(data_columns_list[i].lower())]
+            replace_key = list(data_key_map_dict.keys())[list(data_key_map_dict.values()).index(column_name)]
             dataframe.rename(columns={f"{dataframe.columns[i]}": f"{replace_key}"}, inplace=True)
             logger.info(f"{dataframe.columns[i]} renamed to {replace_key}")
     return dataframe
@@ -120,8 +121,8 @@ def validate_datatype(dataframe, dataframe_name, exist_cols, Data_key_map,data_f
             if not row.empty:
                 expect_dtype = row['Expected_Data_type'].values[0]
                 if expect_dtype != dtype:
-                    logger.info(f"{dataframe_name}: Column [{c}] data type - {dtype}")
-                    logger.info(f"{dataframe_name}: Column [{c}] expected data type - {expect_dtype}")
+                    logger.info(f"{dataframe_name}: Column [{c}] expected type [{expect_dtype}] but actual type - {dtype}")
+                    
                     # update the data type mismatch file
                     orig_files = str(row['Data_type_Mismatch File'].values[0])
                     orig_files += str(data_filenewname)+","
@@ -148,6 +149,116 @@ def parsing_arguments():
     # Access the file paths using the argument names
     return args.newdata, args.keymap, args.loglevel, args.logtime
 
+def read_excel_dataframe_only(data_path, existing_keys, sheet=""):
+    row_count_max = 10 # only check if header in the first 10 rows
+    header_found = False
+    row_count = 0
+    
+    if sheet == "":
+        while header_found == False:
+            df = pd.read_excel(data_path, skiprows=row_count)
+            df_columns = df.columns.tolist()
+            df_columns = df_columns[:4] # only check the first 4 columns
+            # print(f"Checking valid header row {row_count} : {df_columns} ")
+            for col in df_columns:
+                if str(col).lower() in existing_keys:
+                    # print(f"Found header row {row_count} : {df_columns} ")
+                    if (row_count > 0):
+                        logger.info(f" Found header at row {row_count} - {df.columns.tolist()} ")
+                    header_found = True
+                    break
+            if row_count == row_count_max:
+                header_found = True
+            row_count += 1
+        df = pd.read_excel(data_path, skiprows=(row_count-1))
+    else:
+        while header_found == False:
+            df = pd.read_excel(data_path, sheet_name=sheet, skiprows=row_count)
+            df_columns = df.columns.tolist()
+            df_columns = df_columns[:4] # only check the first 4 columns
+            # print(f"Checking valid header row {row_count} : {df_columns} ")
+            for col in df_columns:
+                if str(col).lower() in existing_keys:
+                    if (row_count > 0):
+                        logger.info(f" Found header at row {row_count} - {df.columns.tolist()} ")
+                    header_found = True
+                    break
+            if row_count == row_count_max:
+                header_found = True
+            row_count += 1
+        df = pd.read_excel(data_path, sheet_name=sheet, skiprows=(row_count-1))
+    
+    df = df.drop(df.filter(regex='Unnamed').columns, axis=1)
+    return df
+
+def read_sheet_from_excel(data_path, data_file_path, Data_key_map):
+    # get the existing list of keys
+    existing_keys = Data_key_map['Column Name'].tolist()
+    existing_keys = [x.lower() for x in existing_keys]
+    for i,row in Data_key_map.iterrows():
+        if row['Alternate Name']:
+            alt_names = str(row['Alternate Name']).split(',')
+            existing_keys.extend(alt_names)
+    
+    # get filename for display
+    data_filename = os.path.basename(data_file_path)
+    # Read the multiple sheets if present in the excel file
+    worksheet_dict = {}
+    
+    onboard_data = pd.ExcelFile(data_path)
+    onboard_data_sheets = onboard_data.sheet_names
+
+    # Excel Sheet selection and log those sheets which are not present in the data
+    worksheet_dict['shape'] = {}
+    if len(onboard_data_sheets) > 1:
+        for sheet in onboard_data_sheets:
+            worksheet_dict['shape'][sheet] = pd.read_excel(data_path, sheet_name=sheet).shape
+
+        worksheet_dict['compare'] = {}
+        # Give the list of sheets in the onboard_data_sheets find the difference between the two sheets and update the worksheet_dict
+        for sheet1, value1 in worksheet_dict['shape'].items():
+            for sheet2, value2 in worksheet_dict['shape'].items():
+                if sheet1 != sheet2:
+                    if value1 != value2:
+                        worksheet_dict['compare'][f'\"{sheet1}\" vs. \"{sheet2}\"'] = 'different'
+                    else:
+                        worksheet_dict['compare'][f'\"{sheet1}\" vs. \"{sheet2}\"'] = 'same'
+
+        
+        # Display sheet shape and comparison
+        for sheet, value in worksheet_dict['shape'].items():
+            logger.info(f" Worksheet \"{sheet}\" dataframe shape - {value}")
+        for sheets, value in worksheet_dict['compare'].items():
+            logger.info(f" Worksheet Comparison - {sheets} : {value}")
+        
+        # Read the sheet name from the user        
+        # logger.info(f" Worksheet Dictionary: {worksheet_dict}")
+        print(f" Sheets present in the file {data_filename}: {onboard_data_sheets}")
+        sheet_name = input(f"Enter the sheet name which you want to select from the above list:")
+        
+        # default selecting the first sheet 
+        if sheet_name == '':
+            sheet_name = onboard_data_sheets[0]
+            logger.info(f" Worksheet selected - name: \"{sheet_name}\", size: {worksheet_dict['shape'][sheet_name]}")
+            
+        # # TODO? select the largest sheet, if only valid content
+        # if sheet_name == '':
+        #     max_size_sheet, sheet_size = max(worksheet_dict['shape'].items(), key=lambda x: x[1][0] * x[1][1])
+        #     sheet_name = max_size_sheet
+        #     logger.info(f" Worksheet selected - name: \"{sheet_name}\", size: {sheet_size}")
+        # else:
+        #     logger.info(f" Worksheet selected - name: \"{sheet_name}\", size: {worksheet_dict['shape'][sheet_name]}")
+        
+            
+        # Read the data from the sheet which is not a duplicate
+        Data_finalized = read_excel_dataframe_only(data_path, existing_keys, sheet_name) # pd.read_excel(data_path, sheet_name=sheet_name)
+        logger.info(f"{data_filename} read successfully with the sheet name \"{sheet_name}\"")
+    else:
+        # Read the data
+        Data_finalized = read_excel_dataframe_only(data_path, existing_keys)
+        logger.info(f"{data_filename} read successfully")
+    return Data_finalized
+
 def main():
     # Initialize logger and start file handler
     file_handler = logging.FileHandler(f'{log_dir}/{default_log_name}')
@@ -171,9 +282,10 @@ def main():
     Data_key_map = os.path.join(current_directory, f'{keymap_filename}')
 
     # Read the data
-    Data_finalized = pd.read_excel(data_path)
-    logger.info(f"{data_filename} read successfully")
+    # Data_finalized = pd.read_excel(data_path)
+    # logger.info(f"{data_filename} read successfully")
     Data_key_map = pd.read_excel(Data_key_map)
+    Data_finalized = read_sheet_from_excel(data_path, data_filename, Data_key_map)
     logger.info(f"{keymap_filename} read successfully")
 
     # Option for the user to change the file name by displaying the current file name and the example format
