@@ -1,0 +1,32 @@
+2023-06-17 10:46:51,790 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:46:51,946 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (360, 12)
+2023-06-17 10:46:51,946 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-17 10:46:51,947 - __main__ - INFO -  Worksheet "Sheet3" dataframe shape - (0, 0)
+2023-06-17 10:46:51,947 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-17 10:46:51,948 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet3" : different
+2023-06-17 10:46:51,948 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-17 10:46:51,949 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet3" : same
+2023-06-17 10:46:51,949 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet1" : different
+2023-06-17 10:46:51,950 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet2" : same
+2023-06-17 10:46:52,944 - __main__ - INFO -  Worksheet selected - name: "Sheet1", size: (360, 12)
+2023-06-17 10:46:53,133 - __main__ - INFO -  WBB_metabolic_markers_1.19.2016.xlsx read successfully with the sheet name "Sheet1"
+2023-06-17 10:46:53,814 - __main__ - INFO -  Default filename name is: data/raw/WBB_datasets/WBB_metabolic_markers_1.19.2016.xlsx.csv
+2023-06-17 10:46:53,818 - __main__ - INFO -  standardise_names(): [Ethn_1] renamed to [Ethnicity_1]
+2023-06-17 10:46:53,819 - __main__ - INFO -  standardise_names(): [Time(H)] renamed to [Time]
+2023-06-17 10:46:53,820 - __main__ - INFO -  standardise_names(): [TRIGS(mg/dL)] renamed to [TG]
+2023-06-17 10:46:53,821 - __main__ - INFO -  standardise_names(): [GLUC(mg/dL)] renamed to [Glc]
+2023-06-17 10:46:53,823 - __main__ - INFO -  standardise_names(): [INSULIN(uIU/mL)] renamed to [Insulin]
+2023-06-17 10:46:53,832 - __main__ - INFO -  ./data/onboarded/WBB-metabolic-markers_1.19.2016 saved successfully
+2023-06-17 10:46:53,833 - __main__ - INFO -  validate_keys(): PRESENT Column - Randomization
+2023-06-17 10:46:53,833 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:46:53,834 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:46:53,834 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-17 10:46:53,835 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:46:53,835 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:46:53,835 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-17 10:46:53,836 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-17 10:46:53,837 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-17 10:46:53,838 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-17 10:46:53,838 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-17 10:46:53,839 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-17 10:46:53,847 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64

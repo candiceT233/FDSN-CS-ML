@@ -1,0 +1,100 @@
+2023-06-17 10:39:24,212 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:39:24,794 - __main__ - INFO -  WBB_Demo.xlsx read successfully
+2023-06-17 10:39:25,654 - __main__ - INFO -  Default filename name is: data/raw/WBB_datasets/WBB_Demo.xlsx.csv
+2023-06-17 10:39:25,660 - __main__ - INFO -  standardise_names(): [Ethnicity 1] renamed to [Ethnicity_1]
+2023-06-17 10:39:25,661 - __main__ - INFO -  standardise_names(): [Ethnicity 2] renamed to [Ethnicity_2]
+2023-06-17 10:39:25,662 - __main__ - INFO -  standardise_names(): [Gluc] renamed to [Glc]
+2023-06-17 10:39:25,669 - __main__ - INFO -  ./data/onboarded/WBB-Demo saved successfully
+2023-06-17 10:39:25,670 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-17 10:39:25,671 - __main__ - INFO -  validate_keys(): PRESENT Column - Consentdate
+2023-06-17 10:39:25,672 - __main__ - INFO -  validate_keys(): PRESENT Column - ScreenDate
+2023-06-17 10:39:25,673 - __main__ - INFO -  validate_keys(): PRESENT Column - ScreenID
+2023-06-17 10:39:25,674 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:39:25,674 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:39:25,674 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-17 10:39:25,675 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_2
+2023-06-17 10:39:25,675 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:39:25,675 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-17 10:39:25,676 - __main__ - INFO -  validate_keys(): PRESENT Column - Height1
+2023-06-17 10:39:25,677 - __main__ - INFO -  validate_keys(): PRESENT Column - Height2
+2023-06-17 10:39:25,677 - __main__ - INFO -  validate_keys(): PRESENT Column - HeightM
+2023-06-17 10:39:25,677 - __main__ - INFO -  validate_keys(): PRESENT Column - HtM_m2
+2023-06-17 10:39:25,678 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight1
+2023-06-17 10:39:25,678 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight2
+2023-06-17 10:39:25,678 - __main__ - INFO -  validate_keys(): PRESENT Column - WeightM
+2023-06-17 10:39:25,679 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:39:25,679 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_1
+2023-06-17 10:39:25,680 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_2
+2023-06-17 10:39:25,680 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_M
+2023-06-17 10:39:25,681 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_1
+2023-06-17 10:39:25,681 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_2
+2023-06-17 10:39:25,682 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_M
+2023-06-17 10:39:25,683 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_1
+2023-06-17 10:39:25,684 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_2
+2023-06-17 10:39:25,684 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_M
+2023-06-17 10:39:25,685 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys1
+2023-06-17 10:39:25,686 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys2
+2023-06-17 10:39:25,687 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys3
+2023-06-17 10:39:25,688 - __main__ - INFO -  validate_keys(): PRESENT Column - SysM
+2023-06-17 10:39:25,689 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia1
+2023-06-17 10:39:25,689 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia2
+2023-06-17 10:39:25,690 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia3
+2023-06-17 10:39:25,691 - __main__ - INFO -  validate_keys(): PRESENT Column - DiaM
+2023-06-17 10:39:25,692 - __main__ - INFO -  validate_keys(): PRESENT Column - HR1
+2023-06-17 10:39:25,692 - __main__ - INFO -  validate_keys(): PRESENT Column - HR2
+2023-06-17 10:39:25,692 - __main__ - INFO -  validate_keys(): PRESENT Column - HR3
+2023-06-17 10:39:25,693 - __main__ - INFO -  validate_keys(): PRESENT Column - HRM
+2023-06-17 10:39:25,693 - __main__ - INFO -  validate_keys(): PRESENT Column - QC1
+2023-06-17 10:39:25,694 - __main__ - INFO -  validate_keys(): PRESENT Column - QC2
+2023-06-17 10:39:25,700 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-17 10:39:25,701 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Glc] expected type [float64] but actual type - int64
+2023-06-17 10:39:35,963 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:39:36,533 - __main__ - INFO -  WBB_Demo.xlsx read successfully
+2023-06-17 10:39:39,932 - __main__ - INFO -  Default filename name is: data/raw/WBB_datasets/WBB_Demo.xlsx.csv
+2023-06-17 10:39:39,937 - __main__ - INFO -  standardise_names(): [Ethnicity 1] renamed to [Ethnicity_1]
+2023-06-17 10:39:39,938 - __main__ - INFO -  standardise_names(): [Ethnicity 2] renamed to [Ethnicity_2]
+2023-06-17 10:39:39,940 - __main__ - INFO -  standardise_names(): [Gluc] renamed to [Glc]
+2023-06-17 10:39:39,946 - __main__ - INFO -  ./data/onboarded/WBB-Demo saved successfully
+2023-06-17 10:39:39,946 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-17 10:39:39,947 - __main__ - INFO -  validate_keys(): PRESENT Column - Consentdate
+2023-06-17 10:39:39,947 - __main__ - INFO -  validate_keys(): PRESENT Column - ScreenDate
+2023-06-17 10:39:39,948 - __main__ - INFO -  validate_keys(): PRESENT Column - ScreenID
+2023-06-17 10:39:39,949 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:39:39,949 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:39:39,950 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-17 10:39:39,951 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_2
+2023-06-17 10:39:39,951 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:39:39,952 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-17 10:39:39,952 - __main__ - INFO -  validate_keys(): PRESENT Column - Height1
+2023-06-17 10:39:39,953 - __main__ - INFO -  validate_keys(): PRESENT Column - Height2
+2023-06-17 10:39:39,954 - __main__ - INFO -  validate_keys(): PRESENT Column - HeightM
+2023-06-17 10:39:39,955 - __main__ - INFO -  validate_keys(): PRESENT Column - HtM_m2
+2023-06-17 10:39:39,955 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight1
+2023-06-17 10:39:39,956 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight2
+2023-06-17 10:39:39,956 - __main__ - INFO -  validate_keys(): PRESENT Column - WeightM
+2023-06-17 10:39:39,957 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:39:39,957 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_1
+2023-06-17 10:39:39,958 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_2
+2023-06-17 10:39:39,959 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_M
+2023-06-17 10:39:39,960 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_1
+2023-06-17 10:39:39,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_2
+2023-06-17 10:39:39,962 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_M
+2023-06-17 10:39:39,963 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_1
+2023-06-17 10:39:39,964 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_2
+2023-06-17 10:39:39,964 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_M
+2023-06-17 10:39:39,965 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys1
+2023-06-17 10:39:39,965 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys2
+2023-06-17 10:39:39,965 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys3
+2023-06-17 10:39:39,966 - __main__ - INFO -  validate_keys(): PRESENT Column - SysM
+2023-06-17 10:39:39,966 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia1
+2023-06-17 10:39:39,967 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia2
+2023-06-17 10:39:39,967 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia3
+2023-06-17 10:39:39,968 - __main__ - INFO -  validate_keys(): PRESENT Column - DiaM
+2023-06-17 10:39:39,968 - __main__ - INFO -  validate_keys(): PRESENT Column - HR1
+2023-06-17 10:39:39,969 - __main__ - INFO -  validate_keys(): PRESENT Column - HR2
+2023-06-17 10:39:39,969 - __main__ - INFO -  validate_keys(): PRESENT Column - HR3
+2023-06-17 10:39:39,970 - __main__ - INFO -  validate_keys(): PRESENT Column - HRM
+2023-06-17 10:39:39,971 - __main__ - INFO -  validate_keys(): PRESENT Column - QC1
+2023-06-17 10:39:39,972 - __main__ - INFO -  validate_keys(): PRESENT Column - QC2
+2023-06-17 10:39:39,980 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-17 10:39:39,981 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Glc] expected type [float64] but actual type - int64
