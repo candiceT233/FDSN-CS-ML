@@ -1,0 +1,19 @@
+2023-06-15 20:54:22,347 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 20:54:23,031 - __main__ - INFO -  Copy_of_AV2_OGTT.xlsx read successfully
+2023-06-15 20:54:24,814 - __main__ - INFO -  Default filename name is: data/raw/OGTT_datasets/Copy_of_AV2_OGTT.xlsx.csv
+2023-06-15 20:54:24,820 - __main__ - INFO -  standardise_names(): [Race] renamed to [Ethnicity_2]
+2023-06-15 20:54:24,822 - __main__ - INFO -  standardise_names(): [Ins] renamed to [Insulin]
+2023-06-15 20:54:24,849 - __main__ - INFO -  ./data/onboarded/Copy-of-AV2_OGTT saved successfully
+2023-06-15 20:54:24,851 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-15 20:54:24,852 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-15 20:54:24,854 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-15 20:54:24,855 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_2
+2023-06-15 20:54:24,855 - __main__ - INFO -  validate_keys(): PRESENT Column - BodyWt
+2023-06-15 20:54:24,856 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-15 20:54:24,857 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-15 20:54:24,857 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-15 20:54:24,857 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-15 20:54:24,859 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-15 20:54:24,860 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-15 20:54:24,873 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-15 20:54:24,875 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64

@@ -1,0 +1,68 @@
+2023-06-17 10:33:05,934 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:33:07,010 - __main__ - INFO -  MMTT_COF1_cytokines_2014.xlsx read successfully
+2023-06-17 10:33:20,860 - __main__ - INFO -  Default filename name is: data/raw/MMTT_COF1_datasets/MMTT_COF1_cytokines_2014.xlsx.csv
+2023-06-17 10:33:20,872 - __main__ - INFO -  standardise_names(): [Rand Number] renamed to [Subject]
+2023-06-17 10:33:20,876 - __main__ - INFO -  standardise_names(): [Ethnicity 1] renamed to [Ethnicity_1]
+2023-06-17 10:33:20,878 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-17 10:33:20,879 - __main__ - INFO -  standardise_names(): [Treatment] renamed to [Tx]
+2023-06-17 10:33:20,882 - __main__ - INFO -  standardise_names(): [IL6 (pg/ml)] renamed to [IL6]
+2023-06-17 10:33:20,895 - __main__ - INFO -  ./data/onboarded/MMTT_COF1-cytokines-2014 saved successfully
+2023-06-17 10:33:20,896 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-17 10:33:20,897 - __main__ - INFO -  validate_keys(): PRESENT Column - Screening Number
+2023-06-17 10:33:20,897 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:33:20,899 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:33:20,899 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-17 10:33:20,900 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:33:20,900 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-17 10:33:20,901 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-17 10:33:20,902 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:33:20,903 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-17 10:33:20,903 - __main__ - INFO -  validate_keys(): PRESENT Column - IL2 (pg/ml)
+2023-06-17 10:33:20,905 - __main__ - INFO -  validate_keys(): PRESENT Column - IL4 (pg/ml)
+2023-06-17 10:33:20,906 - __main__ - INFO -  validate_keys(): PRESENT Column - IL6
+2023-06-17 10:33:20,906 - __main__ - INFO -  validate_keys(): PRESENT Column - IL8 (pg/ml)
+2023-06-17 10:33:20,907 - __main__ - INFO -  validate_keys(): PRESENT Column - IL10 (pg/ml)
+2023-06-17 10:33:20,910 - __main__ - INFO -  validate_keys(): PRESENT Column - VEGF (pg/ml)
+2023-06-17 10:33:20,910 - __main__ - INFO -  validate_keys(): PRESENT Column - IFNG (pg/ml)
+2023-06-17 10:33:20,912 - __main__ - INFO -  validate_keys(): PRESENT Column - TNFA (pg/ml)
+2023-06-17 10:33:20,912 - __main__ - INFO -  validate_keys(): PRESENT Column - IL1A (pg/ml)
+2023-06-17 10:33:20,913 - __main__ - INFO -  validate_keys(): PRESENT Column - IL1B (pg/ml)
+2023-06-17 10:33:20,915 - __main__ - INFO -  validate_keys(): PRESENT Column - MCP1 (pg/ml)
+2023-06-17 10:33:20,917 - __main__ - INFO -  validate_keys(): PRESENT Column - EGF (pg/ml)
+2023-06-17 10:33:20,917 - __main__ - INFO -  validate_keys(): PRESENT Column - QC1
+2023-06-17 10:33:20,918 - __main__ - INFO -  validate_keys(): PRESENT Column - QC2
+2023-06-17 10:33:20,933 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-17 10:33:32,924 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:33:33,530 - __main__ - INFO -  MMTT_COF1_cytokines_2014.xlsx read successfully
+2023-06-17 10:33:34,568 - __main__ - INFO -  Default filename name is: data/raw/MMTT_COF1_datasets/MMTT_COF1_cytokines_2014.xlsx.csv
+2023-06-17 10:33:34,574 - __main__ - INFO -  standardise_names(): [Rand Number] renamed to [Subject]
+2023-06-17 10:33:34,576 - __main__ - INFO -  standardise_names(): [Ethnicity 1] renamed to [Ethnicity_1]
+2023-06-17 10:33:34,577 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-17 10:33:34,579 - __main__ - INFO -  standardise_names(): [Treatment] renamed to [Tx]
+2023-06-17 10:33:34,582 - __main__ - INFO -  standardise_names(): [IL6 (pg/ml)] renamed to [IL6]
+2023-06-17 10:33:34,593 - __main__ - INFO -  ./data/onboarded/MMTT_COF1-cytokines-2014 saved successfully
+2023-06-17 10:33:34,594 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-17 10:33:34,595 - __main__ - INFO -  validate_keys(): PRESENT Column - Screening Number
+2023-06-17 10:33:34,597 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:33:34,599 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:33:34,600 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-17 10:33:34,601 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:33:34,602 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-17 10:33:34,603 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-17 10:33:34,604 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:33:34,604 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-17 10:33:34,605 - __main__ - INFO -  validate_keys(): PRESENT Column - IL2 (pg/ml)
+2023-06-17 10:33:34,606 - __main__ - INFO -  validate_keys(): PRESENT Column - IL4 (pg/ml)
+2023-06-17 10:33:34,606 - __main__ - INFO -  validate_keys(): PRESENT Column - IL6
+2023-06-17 10:33:34,607 - __main__ - INFO -  validate_keys(): PRESENT Column - IL8 (pg/ml)
+2023-06-17 10:33:34,607 - __main__ - INFO -  validate_keys(): PRESENT Column - IL10 (pg/ml)
+2023-06-17 10:33:34,609 - __main__ - INFO -  validate_keys(): PRESENT Column - VEGF (pg/ml)
+2023-06-17 10:33:34,610 - __main__ - INFO -  validate_keys(): PRESENT Column - IFNG (pg/ml)
+2023-06-17 10:33:34,610 - __main__ - INFO -  validate_keys(): PRESENT Column - TNFA (pg/ml)
+2023-06-17 10:33:34,611 - __main__ - INFO -  validate_keys(): PRESENT Column - IL1A (pg/ml)
+2023-06-17 10:33:34,612 - __main__ - INFO -  validate_keys(): PRESENT Column - IL1B (pg/ml)
+2023-06-17 10:33:34,613 - __main__ - INFO -  validate_keys(): PRESENT Column - MCP1 (pg/ml)
+2023-06-17 10:33:34,614 - __main__ - INFO -  validate_keys(): PRESENT Column - EGF (pg/ml)
+2023-06-17 10:33:34,615 - __main__ - INFO -  validate_keys(): PRESENT Column - QC1
+2023-06-17 10:33:34,617 - __main__ - INFO -  validate_keys(): PRESENT Column - QC2
+2023-06-17 10:33:34,626 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
