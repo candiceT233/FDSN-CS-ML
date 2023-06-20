@@ -19,18 +19,51 @@ N/A
 - get access to github repo and one drive link to dataset
 
 
-### Week 2 [June 19th] :yellow_circle:
+### Week 2 [June 19th] :white_check_mark:
 **Goals**
 Onboarding tool discussed. Opened issues to clean datasets and prepare them as instructed using the data validator script. Divided 10 datasets among Anushka and I. Will be working on : MMTT_AVOC1, MMTT_FRTS, MMTT_SAT, MMTT_STRB, RRB
 **What went well?**
+ Succesfully onboarded the following datasets and uploaded the log files
+ - RRB
+ - MMTT_FRTS
+
+**What did not go well?**
+Could not process following:
+ - MMTT_STRB -> UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 15-16: invalid continuation byte
+ - MMTT_AVOC1 -> same error, csv issue
+ - MMTT_FRTS -> same
+
+**Did I learn anything important?**
+- data validation script uses 'pd.readexcel()' to read excel files but most of my datasets were in csv format. Adding a try catch to accomodate csv filetypes should help. 
+- by using a separate script I checked that the file types are utf8-sig but specifying this encoding doesnt help.
+
+**What is holding us back?**
+converting the csv to xlsx did not resolve the problem due to Unicode error
+
+**What urgent questions do I have?**
+- Errors to be discussed in the meeting and mitigated
+
+**Next step?**
+- Finish the other datasets
+
+
+### Week 3 [June 26th] :yellow_circle:
+**Goals**
+
+**What went well?**
+
 
 **What did not go well?**
 
+
 **Did I learn anything important?**
+
 
 **What is holding us back?**
 
+
 **What urgent questions do I have?**
 
+
 **Next step?**
-- 
+
