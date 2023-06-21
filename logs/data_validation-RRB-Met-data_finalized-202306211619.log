@@ -1,0 +1,78 @@
+2023-06-21 16:19:34,080 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:19:34,675 - __main__ - INFO -  RRB_Met_data_finalized.xlsx read successfully
+2023-06-21 16:19:37,010 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/RRB_datasets/RRB_Met_data_finalized.xlsx.csv
+2023-06-21 16:19:37,010 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-21 16:19:37,010 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-21 16:19:37,025 - __main__ - INFO -  standardise_names(): [GLU] renamed to [Glc]
+2023-06-21 16:19:37,025 - __main__ - INFO -  standardise_names(): [INS ] renamed to [Insulin]
+2023-06-21 16:19:37,025 - __main__ - INFO -  standardise_names(): [TGb] renamed to [b_TG]
+2023-06-21 16:19:37,025 - __main__ - INFO -  standardise_names(): [GLUb] renamed to [b_Glc]
+2023-06-21 16:19:37,025 - __main__ - INFO -  standardise_names(): [INSb] renamed to [b_Ins]
+2023-06-21 16:19:37,040 - __main__ - INFO -  ./data/onboarded/RRB-Met-data_finalized saved successfully
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Group
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Group2
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - PreDM
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - PreDM2
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - LogTG
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - LogGLU
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - LogIns
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA_T0
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - TG24
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - GLU24
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - INS24
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA_T24
+2023-06-21 16:19:37,056 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 16:19:37,072 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-21 16:19:50,847 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:19:51,400 - __main__ - INFO -  RRB_Met_data_finalized.xlsx read successfully
+2023-06-21 16:19:52,887 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/RRB_datasets/RRB_Met_data_finalized.xlsx.csv
+2023-06-21 16:19:52,887 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-21 16:19:52,887 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-21 16:19:52,887 - __main__ - INFO -  standardise_names(): [GLU] renamed to [Glc]
+2023-06-21 16:19:52,887 - __main__ - INFO -  standardise_names(): [INS ] renamed to [Insulin]
+2023-06-21 16:19:52,887 - __main__ - INFO -  standardise_names(): [TGb] renamed to [b_TG]
+2023-06-21 16:19:52,887 - __main__ - INFO -  standardise_names(): [GLUb] renamed to [b_Glc]
+2023-06-21 16:19:52,887 - __main__ - INFO -  standardise_names(): [INSb] renamed to [b_Ins]
+2023-06-21 16:19:52,902 - __main__ - INFO -  ./data/onboarded/RRB-Met-data_finalized saved successfully
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Group
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Group2
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - PreDM
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - PreDM2
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - LogTG
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - LogGLU
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - LogIns
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA_T0
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - TG24
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - GLU24
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - INS24
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA_T24
+2023-06-21 16:19:52,918 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 16:19:52,934 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
