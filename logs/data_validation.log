@@ -1,0 +1,192 @@
+2023-06-21 16:39:04,170 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:39:05,499 - __main__ - INFO -  Worksheet "Final" dataframe shape - (864, 29)
+2023-06-21 16:39:05,499 - __main__ - INFO -  Worksheet "FinalAUCal" dataframe shape - (828, 38)
+2023-06-21 16:39:05,499 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "FinalAUCal" : different
+2023-06-21 16:39:05,499 - __main__ - INFO -  Worksheet Comparison - "FinalAUCal" vs. "Final" : different
+2023-06-21 16:39:45,582 - __main__ - INFO -  STRB_Met_.xlsx read successfully with the sheet name "Final"
+2023-06-21 16:39:46,911 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/STRB_datasets/STRB_Met_.xlsx.csv
+2023-06-21 16:39:46,911 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-21 16:39:46,911 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 16:39:46,911 - __main__ - INFO -  standardise_names(): [Treat] renamed to [Tx]
+2023-06-21 16:39:46,911 - __main__ - INFO -  standardise_names(): [RatioInsGlc] renamed to [IR]
+2023-06-21 16:39:46,927 - __main__ - INFO -  ./data/onboarded/STRB-Met- saved successfully
+2023-06-21 16:39:46,927 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:39:46,927 - __main__ - INFO -  validate_keys(): PRESENT Column - Repeat
+2023-06-21 16:39:46,927 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 16:39:46,927 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:39:46,927 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - N_TG
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - Chol
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Chol
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Chol
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Ins
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - b_HOMA
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMACat
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMAC2
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - IR
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - IR
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - RatioGlcIns
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_keys(): PRESENT Column - MetS
+2023-06-21 16:39:46,943 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 16:39:46,958 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Age] expected type [int64] but actual type - float64
+2023-06-21 16:39:46,958 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-21 16:39:46,958 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [HOMAC2] expected type [float64] but actual type - object
+2023-06-21 16:40:13,023 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:40:14,398 - __main__ - INFO -  Worksheet "Final" dataframe shape - (864, 29)
+2023-06-21 16:40:14,398 - __main__ - INFO -  Worksheet "FinalAUCal" dataframe shape - (828, 38)
+2023-06-21 16:40:14,398 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "FinalAUCal" : different
+2023-06-21 16:40:14,398 - __main__ - INFO -  Worksheet Comparison - "FinalAUCal" vs. "Final" : different
+2023-06-21 16:40:19,403 - __main__ - INFO -  STRB_Met_.xlsx read successfully with the sheet name "Final"
+2023-06-21 16:40:21,549 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/STRB_datasets/STRB_Met_.xlsx.csv
+2023-06-21 16:40:21,549 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-21 16:40:21,549 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 16:40:21,549 - __main__ - INFO -  standardise_names(): [Treat] renamed to [Tx]
+2023-06-21 16:40:21,549 - __main__ - INFO -  standardise_names(): [RatioInsGlc] renamed to [IR]
+2023-06-21 16:40:21,582 - __main__ - INFO -  ./data/onboarded/STRB-Met- saved successfully
+2023-06-21 16:40:21,582 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:40:21,582 - __main__ - INFO -  validate_keys(): PRESENT Column - Repeat
+2023-06-21 16:40:21,582 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-21 16:40:21,585 - __main__ - INFO -  validate_keys(): PRESENT Column - N_TG
+2023-06-21 16:40:21,586 - __main__ - INFO -  validate_keys(): PRESENT Column - Chol
+2023-06-21 16:40:21,586 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Chol
+2023-06-21 16:40:21,586 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Chol
+2023-06-21 16:40:21,586 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 16:40:21,586 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 16:40:21,586 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-21 16:40:21,586 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Ins
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - b_HOMA
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMACat
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMAC2
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - IR
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - IR
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - RatioGlcIns
+2023-06-21 16:40:21,587 - __main__ - INFO -  validate_keys(): PRESENT Column - MetS
+2023-06-21 16:40:21,589 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 16:40:21,589 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Age] expected type [int64] but actual type - float64
+2023-06-21 16:40:21,593 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-21 16:40:21,597 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [HOMAC2] expected type [float64] but actual type - object
+2023-06-21 16:40:34,673 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:40:35,987 - __main__ - INFO -  Worksheet "Final" dataframe shape - (864, 29)
+2023-06-21 16:40:35,987 - __main__ - INFO -  Worksheet "FinalAUCal" dataframe shape - (828, 38)
+2023-06-21 16:40:35,987 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "FinalAUCal" : different
+2023-06-21 16:40:35,987 - __main__ - INFO -  Worksheet Comparison - "FinalAUCal" vs. "Final" : different
+2023-06-21 16:40:44,699 - __main__ - INFO -  STRB_Met_.xlsx read successfully with the sheet name "FinalAUCal"
+2023-06-21 16:40:46,128 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/STRB_datasets/STRB_Met_.xlsx.csv
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [Treat] renamed to [Tx]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [TAUCGlc] renamed to [TAUCGlsCalc]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [PosiAUCGlc] renamed to [PosiAUCGlcCalc]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [TAUCIns] renamed to [TAUCInsCalc]
+2023-06-21 16:40:46,144 - __main__ - INFO -  standardise_names(): [PosiAUCIns] renamed to [PosiAUCInsCalc]
+2023-06-21 16:40:46,159 - __main__ - INFO -  ./data/onboarded/STRB-Met- saved successfully
+2023-06-21 16:40:46,159 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:40:46,159 - __main__ - INFO -  validate_keys(): PRESENT Column - Repeat
+2023-06-21 16:40:46,159 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 16:40:46,159 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:40:46,159 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - N_TG
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Chol
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Chol
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Chol
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - TAUCGlsCalc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - PosiAUCGlcCalc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - PosiAUCGlcCalc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - TAUCInsCalc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - TAUCInsCalc
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 16:40:46,175 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Ins
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_keys(): PRESENT Column - PosiAUCInsCalc
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_keys(): PRESENT Column - PosiAUCInsCalc
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMACat
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMAC2
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - TAUCGlcCalc, iAUCGlcCalc, iAUCGlc, iAUCInscalc, iAUCIns, Metsynd, 
+
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Age] expected type [int64] but actual type - float64
+2023-06-21 16:40:46,190 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-21 16:40:46,209 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TAUCGlcCalc] data type - float64
+2023-06-21 16:40:46,209 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [iAUCGlcCalc] data type - float64
+2023-06-21 16:40:46,209 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [iAUCGlc] data type - float64
+2023-06-21 16:42:04,528 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:42:05,856 - __main__ - INFO -  Worksheet "Final" dataframe shape - (864, 29)
+2023-06-21 16:42:05,856 - __main__ - INFO -  Worksheet "FinalAUCal" dataframe shape - (828, 38)
+2023-06-21 16:42:05,856 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "FinalAUCal" : different
+2023-06-21 16:42:05,856 - __main__ - INFO -  Worksheet Comparison - "FinalAUCal" vs. "Final" : different
+2023-06-21 16:42:12,858 - __main__ - INFO -  STRB_Met_.xlsx read successfully with the sheet name "Final"
+2023-06-21 16:42:14,626 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/STRB_datasets/STRB_Met_.xlsx.csv
+2023-06-21 16:42:14,626 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-21 16:42:14,626 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 16:42:14,626 - __main__ - INFO -  standardise_names(): [Treat] renamed to [Tx]
+2023-06-21 16:42:14,626 - __main__ - INFO -  standardise_names(): [RatioInsGlc] renamed to [IR]
+2023-06-21 16:42:14,657 - __main__ - INFO -  ./data/onboarded/STRB-Met- saved successfully
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Repeat
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - N_TG
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Chol
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Chol
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Chol
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Ins
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - b_HOMA
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMACat
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMAC2
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - IR
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - IR
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - RatioGlcIns
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_keys(): PRESENT Column - MetS
+2023-06-21 16:42:14,657 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 16:42:14,673 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Age] expected type [int64] but actual type - float64
+2023-06-21 16:42:14,673 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-21 16:42:14,673 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [HOMAC2] expected type [float64] but actual type - object
