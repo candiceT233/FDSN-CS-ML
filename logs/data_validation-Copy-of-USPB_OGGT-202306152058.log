@@ -1,0 +1,18 @@
+2023-06-15 20:58:35,537 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 20:58:35,850 - __main__ - INFO -  Copy_of_USPB_OGGT.xlsx read successfully
+2023-06-15 20:58:37,274 - __main__ - INFO -  Default filename name is: data/raw/OGTT_datasets/Copy_of_USPB_OGGT.xlsx.csv
+2023-06-15 20:58:37,284 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-15 20:58:37,286 - __main__ - INFO -  standardise_names(): [Glucose] renamed to [Glc]
+2023-06-15 20:58:37,295 - __main__ - INFO -  ./data/onboarded/Copy-of-USPB_OGGT saved successfully
+2023-06-15 20:58:37,296 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-15 20:58:37,296 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-15 20:58:37,297 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-15 20:58:37,298 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-15 20:58:37,302 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-15 20:58:37,303 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-15 20:58:37,303 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-15 20:58:37,304 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - Age , week, 
+
+2023-06-15 20:58:37,306 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Tx] expected type [object] but actual type - int64
+2023-06-15 20:58:37,310 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Age ] data type - int64
+2023-06-15 20:58:37,311 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [week] data type - int64

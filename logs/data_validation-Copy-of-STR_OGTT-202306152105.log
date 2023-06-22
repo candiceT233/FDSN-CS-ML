@@ -1,0 +1,28 @@
+2023-06-15 21:04:54,793 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 21:04:55,630 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (570, 13)
+2023-06-15 21:04:55,631 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-15 21:04:55,632 - __main__ - INFO -  Worksheet "Sheet3" dataframe shape - (0, 0)
+2023-06-15 21:04:55,634 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-15 21:04:55,634 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet3" : different
+2023-06-15 21:04:55,635 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-15 21:04:55,636 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet3" : same
+2023-06-15 21:04:55,638 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet1" : different
+2023-06-15 21:04:55,639 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet2" : same
+2023-06-15 21:04:59,142 - __main__ - INFO -  Worksheet selected - name: "Sheet1", size: (570, 13)
+2023-06-15 21:04:59,859 - __main__ - INFO -  Copy_of_STR_OGTT.xlsx read successfully with the sheet name "Sheet1"
+2023-06-15 21:05:02,569 - __main__ - INFO -  Default filename name is: data/raw/OGTT_datasets/Copy_of_STR_OGTT.xlsx.csv
+2023-06-15 21:05:02,575 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-15 21:05:02,577 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-15 21:05:02,592 - __main__ - INFO -  ./data/onboarded/Copy-of-STR_OGTT saved successfully
+2023-06-15 21:05:02,599 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-15 21:05:02,600 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-15 21:05:02,601 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-15 21:05:02,602 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-15 21:05:02,603 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-15 21:05:02,604 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-15 21:05:02,605 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-15 21:05:02,606 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-15 21:05:02,607 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - ID, 
+
+2023-06-15 21:05:02,608 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [ID] data type - object
+2023-06-15 21:05:02,611 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object

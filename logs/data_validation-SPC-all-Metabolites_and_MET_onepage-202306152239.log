@@ -1,0 +1,206 @@
+2023-06-15 22:37:58,227 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 22:38:17,483 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 22:39:30,449 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 22:39:31,365 - __main__ - INFO -  SPC_all_Metabolites_and_MET_onepage.xlsx read successfully
+2023-06-15 22:39:32,633 - __main__ - INFO -  Default filename name is: data/raw/MMTT_SPC/SPC_all_Metabolites_and_MET_onepage.xlsx.csv
+2023-06-15 22:39:32,636 - __main__ - INFO -  standardise_names(): [race1] renamed to [Ethnicity_2]
+2023-06-15 22:39:32,637 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-15 22:39:32,741 - __main__ - INFO -  standardise_names(): [Glucose] renamed to [Glc]
+2023-06-15 22:39:32,743 - __main__ - INFO -  standardise_names(): [GlucB] renamed to [b_Glc]
+2023-06-15 22:39:32,744 - __main__ - INFO -  standardise_names(): [InsB] renamed to [b_Ins]
+2023-06-15 22:39:32,747 - __main__ - INFO -  standardise_names(): [TGB] renamed to [b_TG]
+2023-06-15 22:39:32,748 - __main__ - INFO -  standardise_names(): [GlucN] renamed to [N_Glc]
+2023-06-15 22:39:32,804 - __main__ - INFO -  ./data/onboarded/SPC-all-Metabolites_and_MET_onepage saved successfully
+2023-06-15 22:39:32,804 - __main__ - INFO -  validate_keys(): PRESENT Column - SampleID
+2023-06-15 22:39:32,805 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-15 22:39:32,805 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-15 22:39:32,806 - __main__ - INFO -  validate_keys(): PRESENT Column - AgeCat
+2023-06-15 22:39:32,806 - __main__ - INFO -  validate_keys(): PRESENT Column - AgeCat2
+2023-06-15 22:39:32,807 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-15 22:39:32,807 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_2
+2023-06-15 22:39:32,808 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-15 22:39:32,808 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-15 22:39:32,808 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-15 22:39:32,809 - __main__ - INFO -  validate_keys(): PRESENT Column - BodyComp
+2023-06-15 22:39:32,809 - __main__ - INFO -  validate_keys(): PRESENT Column - BCompCat
+2023-06-15 22:39:32,810 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-15 22:39:32,810 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-15 22:39:32,811 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-15 22:39:32,812 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-15 22:39:32,813 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-15 22:39:32,813 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-15 22:39:32,814 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-15 22:39:32,814 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-15 22:39:32,814 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-15 22:39:32,815 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-15 22:39:32,862 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - InsN, TGN, GlucLog, InsLog, TGLog, IL6, LogIL6, LnIL6), IL6B, PreOcc, PostOcc, PerFMD, LogFMD, PerFMDB, nFMD, g10GLUC, M12CA, M12CAGluc, isomer343_1, isomer343_2, isomer343_3, g6Gluc, S6dihydroGluc, g8Gluc, A7Gluc, CA, CAGluc, Carnosol, CarnosolGluc, Coumarin, CoumarinOH, CoumarinOH2, CoumarinOHGluc, L3Gluc, LGluc1, LGluc2, Naringenin, NaringeninGluc, Piperine, Rosmanol, RosmanolGluc, BA2OH, BA34diOH, BA4OH, BA4OHM, Bald4OH, BaldOHOCH, BAOCHOglc1, BAOCHOglc2, CIA2OH, CIA3OCH4Oglc, CIA4OCH3Oglc, DHPPAGluc, HA, HA3OH, HA4OH, PAA2OH, PAA3OH, PAA4OH, PAAOCH, PPA3OCH4Oglc, PPA4OCH3Oglc, PPA4OH, PPAdiOH, PPAOCH, 
+
+2023-06-15 22:39:32,867 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Subject] expected type [object] but actual type - int64
+2023-06-15 22:39:32,871 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-15 22:39:32,874 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [InsN] data type - float64
+2023-06-15 22:39:32,874 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TGN] data type - float64
+2023-06-15 22:39:32,875 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [GlucLog] data type - float64
+2023-06-15 22:39:32,875 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [InsLog] data type - float64
+2023-06-15 22:39:32,876 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TGLog] data type - float64
+2023-06-15 22:39:32,877 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6] data type - float64
+2023-06-15 22:39:32,880 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LogIL6] data type - float64
+2023-06-15 22:39:32,881 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LnIL6)] data type - float64
+2023-06-15 22:39:32,882 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6B] data type - float64
+2023-06-15 22:39:32,883 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PreOcc] data type - float64
+2023-06-15 22:39:32,884 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PostOcc] data type - float64
+2023-06-15 22:39:32,885 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PerFMD] data type - float64
+2023-06-15 22:39:32,886 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LogFMD] data type - float64
+2023-06-15 22:39:32,888 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PerFMDB] data type - float64
+2023-06-15 22:39:32,889 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [nFMD] data type - float64
+2023-06-15 22:39:32,890 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [g10GLUC] data type - float64
+2023-06-15 22:39:32,890 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [M12CA] data type - float64
+2023-06-15 22:39:32,891 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [M12CAGluc] data type - float64
+2023-06-15 22:39:32,891 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [isomer343_1] data type - float64
+2023-06-15 22:39:32,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [isomer343_2] data type - float64
+2023-06-15 22:39:32,893 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [isomer343_3] data type - float64
+2023-06-15 22:39:32,894 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [g6Gluc] data type - float64
+2023-06-15 22:39:32,895 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [S6dihydroGluc] data type - float64
+2023-06-15 22:39:32,895 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [g8Gluc] data type - float64
+2023-06-15 22:39:32,896 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [A7Gluc] data type - float64
+2023-06-15 22:39:32,896 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CA] data type - float64
+2023-06-15 22:39:32,897 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CAGluc] data type - float64
+2023-06-15 22:39:32,897 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Carnosol] data type - float64
+2023-06-15 22:39:32,898 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CarnosolGluc] data type - float64
+2023-06-15 22:39:32,898 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Coumarin] data type - float64
+2023-06-15 22:39:32,899 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CoumarinOH] data type - float64
+2023-06-15 22:39:32,900 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CoumarinOH2] data type - float64
+2023-06-15 22:39:32,900 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CoumarinOHGluc] data type - float64
+2023-06-15 22:39:32,901 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [L3Gluc] data type - float64
+2023-06-15 22:39:32,902 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LGluc1] data type - float64
+2023-06-15 22:39:32,903 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LGluc2] data type - float64
+2023-06-15 22:39:32,904 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Naringenin] data type - float64
+2023-06-15 22:39:32,905 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NaringeninGluc] data type - float64
+2023-06-15 22:39:32,906 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Piperine] data type - float64
+2023-06-15 22:39:32,907 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Rosmanol] data type - float64
+2023-06-15 22:39:32,908 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [RosmanolGluc] data type - float64
+2023-06-15 22:39:32,909 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA2OH] data type - float64
+2023-06-15 22:39:32,910 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA34diOH] data type - float64
+2023-06-15 22:39:32,910 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA4OH] data type - float64
+2023-06-15 22:39:32,911 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA4OHM] data type - float64
+2023-06-15 22:39:32,911 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Bald4OH] data type - float64
+2023-06-15 22:39:32,912 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BaldOHOCH] data type - float64
+2023-06-15 22:39:32,912 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BAOCHOglc1] data type - float64
+2023-06-15 22:39:32,912 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BAOCHOglc2] data type - float64
+2023-06-15 22:39:32,913 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CIA2OH] data type - float64
+2023-06-15 22:39:32,913 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CIA3OCH4Oglc] data type - float64
+2023-06-15 22:39:32,914 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CIA4OCH3Oglc] data type - float64
+2023-06-15 22:39:32,914 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [DHPPAGluc] data type - float64
+2023-06-15 22:39:32,915 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HA] data type - float64
+2023-06-15 22:39:32,915 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HA3OH] data type - float64
+2023-06-15 22:39:32,916 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HA4OH] data type - float64
+2023-06-15 22:39:32,917 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAA2OH] data type - float64
+2023-06-15 22:39:32,918 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAA3OH] data type - float64
+2023-06-15 22:39:32,919 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAA4OH] data type - float64
+2023-06-15 22:39:32,919 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAAOCH] data type - float64
+2023-06-15 22:39:32,920 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPA3OCH4Oglc] data type - float64
+2023-06-15 22:39:32,921 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPA4OCH3Oglc] data type - float64
+2023-06-15 22:39:32,922 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPA4OH] data type - float64
+2023-06-15 22:39:32,922 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPAdiOH] data type - float64
+2023-06-15 22:39:32,923 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPAOCH] data type - float64
+2023-06-15 22:39:54,536 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 22:39:55,380 - __main__ - INFO -  SPC_all_Metabolites_and_MET_onepage.xlsx read successfully
+2023-06-15 22:39:56,369 - __main__ - INFO -  Default filename name is: data/raw/MMTT_SPC/SPC_all_Metabolites_and_MET_onepage.xlsx.csv
+2023-06-15 22:39:56,374 - __main__ - INFO -  standardise_names(): [race1] renamed to [Ethnicity_2]
+2023-06-15 22:39:56,377 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-15 22:39:56,378 - __main__ - INFO -  standardise_names(): [Glucose] renamed to [Glc]
+2023-06-15 22:39:56,380 - __main__ - INFO -  standardise_names(): [GlucB] renamed to [b_Glc]
+2023-06-15 22:39:56,383 - __main__ - INFO -  standardise_names(): [InsB] renamed to [b_Ins]
+2023-06-15 22:39:56,385 - __main__ - INFO -  standardise_names(): [TGB] renamed to [b_TG]
+2023-06-15 22:39:56,388 - __main__ - INFO -  standardise_names(): [GlucN] renamed to [N_Glc]
+2023-06-15 22:39:56,444 - __main__ - INFO -  ./data/onboarded/SPC-all-Metabolites_and_MET_onepage saved successfully
+2023-06-15 22:39:56,445 - __main__ - INFO -  validate_keys(): PRESENT Column - SampleID
+2023-06-15 22:39:56,445 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-15 22:39:56,445 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-15 22:39:56,446 - __main__ - INFO -  validate_keys(): PRESENT Column - AgeCat
+2023-06-15 22:39:56,446 - __main__ - INFO -  validate_keys(): PRESENT Column - AgeCat2
+2023-06-15 22:39:56,447 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-15 22:39:56,447 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_2
+2023-06-15 22:39:56,448 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-15 22:39:56,448 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-15 22:39:56,449 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-15 22:39:56,449 - __main__ - INFO -  validate_keys(): PRESENT Column - BodyComp
+2023-06-15 22:39:56,450 - __main__ - INFO -  validate_keys(): PRESENT Column - BCompCat
+2023-06-15 22:39:56,450 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-15 22:39:56,451 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-15 22:39:56,451 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-15 22:39:56,452 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-15 22:39:56,452 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-15 22:39:56,452 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-15 22:39:56,453 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-15 22:39:56,453 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-15 22:39:56,454 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-15 22:39:56,454 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-15 22:39:56,526 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - InsN, TGN, GlucLog, InsLog, TGLog, IL6, LogIL6, LnIL6), IL6B, PreOcc, PostOcc, PerFMD, LogFMD, PerFMDB, nFMD, g10GLUC, M12CA, M12CAGluc, isomer343_1, isomer343_2, isomer343_3, g6Gluc, S6dihydroGluc, g8Gluc, A7Gluc, CA, CAGluc, Carnosol, CarnosolGluc, Coumarin, CoumarinOH, CoumarinOH2, CoumarinOHGluc, L3Gluc, LGluc1, LGluc2, Naringenin, NaringeninGluc, Piperine, Rosmanol, RosmanolGluc, BA2OH, BA34diOH, BA4OH, BA4OHM, Bald4OH, BaldOHOCH, BAOCHOglc1, BAOCHOglc2, CIA2OH, CIA3OCH4Oglc, CIA4OCH3Oglc, DHPPAGluc, HA, HA3OH, HA4OH, PAA2OH, PAA3OH, PAA4OH, PAAOCH, PPA3OCH4Oglc, PPA4OCH3Oglc, PPA4OH, PPAdiOH, PPAOCH, 
+
+2023-06-15 22:39:56,529 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Subject] expected type [object] but actual type - int64
+2023-06-15 22:39:56,533 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-15 22:39:56,538 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [InsN] data type - float64
+2023-06-15 22:39:56,539 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TGN] data type - float64
+2023-06-15 22:39:56,539 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [GlucLog] data type - float64
+2023-06-15 22:39:56,540 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [InsLog] data type - float64
+2023-06-15 22:39:56,542 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TGLog] data type - float64
+2023-06-15 22:39:56,543 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6] data type - float64
+2023-06-15 22:39:56,545 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LogIL6] data type - float64
+2023-06-15 22:39:56,546 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LnIL6)] data type - float64
+2023-06-15 22:39:56,546 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6B] data type - float64
+2023-06-15 22:39:56,547 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PreOcc] data type - float64
+2023-06-15 22:39:56,547 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PostOcc] data type - float64
+2023-06-15 22:39:56,548 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PerFMD] data type - float64
+2023-06-15 22:39:56,549 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LogFMD] data type - float64
+2023-06-15 22:39:56,549 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PerFMDB] data type - float64
+2023-06-15 22:39:56,550 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [nFMD] data type - float64
+2023-06-15 22:39:56,550 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [g10GLUC] data type - float64
+2023-06-15 22:39:56,551 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [M12CA] data type - float64
+2023-06-15 22:39:56,551 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [M12CAGluc] data type - float64
+2023-06-15 22:39:56,552 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [isomer343_1] data type - float64
+2023-06-15 22:39:56,553 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [isomer343_2] data type - float64
+2023-06-15 22:39:56,553 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [isomer343_3] data type - float64
+2023-06-15 22:39:56,554 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [g6Gluc] data type - float64
+2023-06-15 22:39:56,555 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [S6dihydroGluc] data type - float64
+2023-06-15 22:39:56,557 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [g8Gluc] data type - float64
+2023-06-15 22:39:56,558 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [A7Gluc] data type - float64
+2023-06-15 22:39:56,559 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CA] data type - float64
+2023-06-15 22:39:56,560 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CAGluc] data type - float64
+2023-06-15 22:39:56,561 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Carnosol] data type - float64
+2023-06-15 22:39:56,562 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CarnosolGluc] data type - float64
+2023-06-15 22:39:56,563 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Coumarin] data type - float64
+2023-06-15 22:39:56,563 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CoumarinOH] data type - float64
+2023-06-15 22:39:56,564 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CoumarinOH2] data type - float64
+2023-06-15 22:39:56,564 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CoumarinOHGluc] data type - float64
+2023-06-15 22:39:56,565 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [L3Gluc] data type - float64
+2023-06-15 22:39:56,566 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LGluc1] data type - float64
+2023-06-15 22:39:56,566 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LGluc2] data type - float64
+2023-06-15 22:39:56,567 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Naringenin] data type - float64
+2023-06-15 22:39:56,567 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NaringeninGluc] data type - float64
+2023-06-15 22:39:56,568 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Piperine] data type - float64
+2023-06-15 22:39:56,569 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Rosmanol] data type - float64
+2023-06-15 22:39:56,569 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [RosmanolGluc] data type - float64
+2023-06-15 22:39:56,570 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA2OH] data type - float64
+2023-06-15 22:39:56,571 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA34diOH] data type - float64
+2023-06-15 22:39:56,573 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA4OH] data type - float64
+2023-06-15 22:39:56,574 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BA4OHM] data type - float64
+2023-06-15 22:39:56,575 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Bald4OH] data type - float64
+2023-06-15 22:39:56,576 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BaldOHOCH] data type - float64
+2023-06-15 22:39:56,578 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BAOCHOglc1] data type - float64
+2023-06-15 22:39:56,579 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [BAOCHOglc2] data type - float64
+2023-06-15 22:39:56,579 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CIA2OH] data type - float64
+2023-06-15 22:39:56,580 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CIA3OCH4Oglc] data type - float64
+2023-06-15 22:39:56,580 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CIA4OCH3Oglc] data type - float64
+2023-06-15 22:39:56,581 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [DHPPAGluc] data type - float64
+2023-06-15 22:39:56,581 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HA] data type - float64
+2023-06-15 22:39:56,582 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HA3OH] data type - float64
+2023-06-15 22:39:56,583 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HA4OH] data type - float64
+2023-06-15 22:39:56,583 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAA2OH] data type - float64
+2023-06-15 22:39:56,584 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAA3OH] data type - float64
+2023-06-15 22:39:56,585 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAA4OH] data type - float64
+2023-06-15 22:39:56,585 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PAAOCH] data type - float64
+2023-06-15 22:39:56,586 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPA3OCH4Oglc] data type - float64
+2023-06-15 22:39:56,586 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPA4OCH3Oglc] data type - float64
+2023-06-15 22:39:56,587 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPA4OH] data type - float64
+2023-06-15 22:39:56,588 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPAdiOH] data type - float64
+2023-06-15 22:39:56,589 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [PPAOCH] data type - float64
