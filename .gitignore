@@ -1,11 +1,11 @@
 # data file
 *.csv
-# *.xlsx
+*.xlsx
 *.xls
-
+!*Data_Key_Map_.*.xlsx
 # logs
 # logs/
-data/raw
+
 
 # others
 .DS_Store
