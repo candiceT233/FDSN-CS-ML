@@ -1,0 +1,37 @@
+2023-06-21 17:44:50,201 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 17:44:50,263 - __main__ - INFO -  Worksheet "Demographic" dataframe shape - (32, 43)
+2023-06-21 17:44:50,263 - __main__ - INFO -  Worksheet "Final" dataframe shape - (32, 41)
+2023-06-21 17:44:50,263 - __main__ - INFO -  Worksheet Comparison - "Demographic" vs. "Final" : different
+2023-06-21 17:44:50,263 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Demographic" : different
+2023-06-21 17:46:24,992 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 17:46:25,133 - __main__ - INFO -  Found header at row 2 - ['Subject', 'Ethnic', 'Age', 'Sex', 'BMI', 'BMICat', 'Seq', 'Trx', 'TX_Actual', 'Visit', 'Time', 'Time1', 'IL6', 'IL6b', 'IL6n', 'AUC', 'Sum', 'Unnamed: 17', 'Unnamed: 18', 'QC1', 'QC2'] 
+2023-06-21 17:46:25,179 - __main__ - INFO -  MMTT_AVOC1_IL6_Data_Final_choose_A_.xlsx read successfully
+2023-06-21 17:46:31,961 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_IL6_Data_Final_choose_A_.xlsx.csv
+2023-06-21 17:46:31,961 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-21 17:46:31,961 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 17:46:31,961 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-21 17:46:31,961 - __main__ - INFO -  ./data/onboarded/MMTT_AVOC1-IL6-Data_Final_choose_A_ saved successfully
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - BMICat
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - TX_Actual
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 17:46:31,961 - __main__ - INFO -  validate_keys(): PRESENT Column - Time1
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_keys(): PRESENT Column - QC1
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_keys(): PRESENT Column - QC2
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - Trx, IL6, IL6b, IL6n, AUC, Sum, 
+
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Age] expected type [int64] but actual type - float64
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Trx] data type - object
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6] data type - float64
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6b] data type - float64
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6n] data type - float64
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [AUC] data type - object
+2023-06-21 17:46:31,976 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Sum] data type - float64
