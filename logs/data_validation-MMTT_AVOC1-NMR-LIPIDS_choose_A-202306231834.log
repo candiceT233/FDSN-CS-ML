@@ -1,0 +1,73 @@
+2023-06-23 18:33:40,598 - __main__ - INFO -  src/onboarding/Data_Key-Map_IJ.xlsx read successfully
+2023-06-23 18:33:41,039 - __main__ - INFO -  Worksheet "Report" dataframe shape - (251, 23)
+2023-06-23 18:33:41,039 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (247, 28)
+2023-06-23 18:33:41,039 - __main__ - INFO -  Worksheet "Final" dataframe shape - (248, 47)
+2023-06-23 18:33:41,039 - __main__ - INFO -  Worksheet "Final_Impute" dataframe shape - (232, 47)
+2023-06-23 18:33:41,039 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Sheet1" : different
+2023-06-23 18:33:41,039 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Final" : different
+2023-06-23 18:33:41,039 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Final_Impute" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Report" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Final" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Final_Impute" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Report" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Sheet1" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Final_Impute" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Report" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Sheet1" : different
+2023-06-23 18:33:41,054 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Final" : different
+2023-06-23 18:34:19,552 - __main__ - INFO -  MMTT_AVOC1_NMR_LIPIDS_choose_A.xlsx read successfully with the sheet name "Final"
+2023-06-23 18:34:21,199 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_NMR_LIPIDS_choose_A.xlsx.csv
+2023-06-23 18:34:21,213 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-23 18:34:21,213 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-23 18:34:21,213 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-23 18:34:21,213 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-23 18:34:21,215 - __main__ - INFO -  standardise_names(): [Tx_Act] renamed to [TX_Actual]
+2023-06-23 18:34:21,215 - __main__ - INFO -  ./data/onboarded/MMTT_AVOC1-NMR-LIPIDS_choose_A saved successfully
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - TX_Actual
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - Time2
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VLDLCP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VLDLCP_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VLCP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VLCP_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VMP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VMP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VSP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VSP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LDLP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LDLP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - IDLP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - IDLP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LLP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LLP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LSP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LSP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HDLP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HDLP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HLP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HLP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HMP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HMP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HSP3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HSP3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VZ3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - VZ3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LZ3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - LZ3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HZ3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - HZ3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - NTG3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - NTG3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - NVCTG3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - NVCTG_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - NHC3
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_keys(): PRESENT Column - NHC3_B
+2023-06-23 18:34:21,215 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - object

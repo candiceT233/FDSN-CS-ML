@@ -1,0 +1,62 @@
+2023-06-21 17:36:47,037 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 17:36:47,099 - __main__ - INFO -  Worksheet "Demographic" dataframe shape - (32, 43)
+2023-06-21 17:36:47,099 - __main__ - INFO -  Worksheet "Final" dataframe shape - (32, 41)
+2023-06-21 17:36:47,099 - __main__ - INFO -  Worksheet Comparison - "Demographic" vs. "Final" : different
+2023-06-21 17:36:47,099 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Demographic" : different
+2023-06-21 17:37:38,207 - __main__ - INFO -  MMTT_AVOC1_DEMO_EP_Final.xlsx read successfully with the sheet name "Demographic"
+2023-06-21 17:37:40,239 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_DEMO_EP_Final.xlsx.csv
+2023-06-21 17:37:40,239 - __main__ - INFO -  standardise_names(): [Ethnicity 1] renamed to [Ethnicity_1]
+2023-06-21 17:37:40,239 - __main__ - INFO -  standardise_names(): [Ethnicity 2] renamed to [Ethnicity_2]
+2023-06-21 17:37:40,239 - __main__ - INFO -  standardise_names(): [Treat] renamed to [Tx]
+2023-06-21 17:37:40,239 - __main__ - INFO -  ./data/onboarded/MMTT_AVOC1-DEMO-EP_Final saved successfully
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - ScreenID
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_2
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 17:37:40,239 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Height1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Height2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - HeightM
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - HtM_m2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - WeightM
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_M
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_M
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_M
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys3
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - SysM
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia3
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - DiaM
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - HR1
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - HR2
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - HR3
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): PRESENT Column - HRM
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - consent date , Screen date, Body Temp, CapillaryGluc, Venous Glen,  Insulin, 
+
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [consent date ] data type - datetime64[ns]
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Screen date] data type - object
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Ethnicity_2] expected type [object] but actual type - float64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Tx] expected type [object] but actual type - float64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Body Temp] data type - float64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [CapillaryGluc] data type - int64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Venous Glen] data type - float64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [ Insulin] data type - float64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [SysM] expected type [int64] but actual type - float64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [DiaM] expected type [int64] but actual type - float64
+2023-06-21 17:37:40,254 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [HRM] expected type [int64] but actual type - float64

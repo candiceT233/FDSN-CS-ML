@@ -1,0 +1,69 @@
+2023-06-23 18:59:06,269 - __main__ - INFO -  src/onboarding/Data_Key-Map_IJ.xlsx read successfully
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (496, 39)
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet "add Peptides" dataframe shape - (436, 48)
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "add Peptides" : different
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet Comparison - "add Peptides" vs. "Sheet1" : different
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet Comparison - "add Peptides" vs. "Sheet2" : different
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-23 18:59:06,675 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "add Peptides" : different
+2023-06-23 18:59:14,932 - __main__ - INFO -  MMTT_AVOC1_VAS_Final_n31_SAS_with_GUT_peptides.xlsx read successfully with the sheet name "Sheet1"
+2023-06-23 18:59:15,764 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_VAS_Final_n31_SAS_with_GUT_peptides.xlsx.csv
+2023-06-23 18:59:15,780 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-23 18:59:15,780 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-23 18:59:15,780 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-23 18:59:15,780 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-23 18:59:15,791 - __main__ - INFO -  ./data/onboarded/MMTT_AVOC1-VAS-Final_n31_SAS_with_GUT_peptides saved successfully
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - BMICat
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - TX2
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Time1
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - hung
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - hungb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - hungn
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - full
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - fullb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - fulln
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - des
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - desb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - desn
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - amt
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - amtb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - amtn
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - thirst
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - Thirstb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - thirstn
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - naus
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - nausb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - nausn
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - satis
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - satisb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - alert
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - alertb
+2023-06-23 18:59:15,791 - __main__ - INFO -  validate_keys(): PRESENT Column - altern
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_keys(): PRESENT Column - tired
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_keys(): PRESENT Column - tiredb
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_keys(): PRESENT Column - tiredn
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - satisn, 
+
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time1] expected type [float64] but actual type - int64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [hung] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [full] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [des] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [desn] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [amt] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [thirst] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [naus] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [satisn] data type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [alert] expected type [object] but actual type - float64
+2023-06-23 18:59:15,796 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [tired] expected type [object] but actual type - float64
