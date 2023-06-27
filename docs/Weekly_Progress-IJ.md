@@ -8,7 +8,7 @@
 - N/A
   
 **What did not go well?**
-- N/A
+- The dataset 'MMTT_MCP-1_AVOC1_chooseA.xlsx' has not been onboarded as instructed because it has formatting issues that need to resolved first.
   
 **Did I learn anything important?**
 - Datasets still required alot of cleaning before it can be passed to the ML pipeline
