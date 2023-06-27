@@ -1,0 +1,41 @@
+2023-06-21 16:30:55,983 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:30:56,313 - __main__ - INFO -  Worksheet "DataSelection" dataframe shape - (864, 20)
+2023-06-21 16:30:56,313 - __main__ - INFO -  Worksheet "GlcCMax" dataframe shape - (96, 13)
+2023-06-21 16:30:56,313 - __main__ - INFO -  Worksheet "InsCMax" dataframe shape - (96, 13)
+2023-06-21 16:30:56,313 - __main__ - INFO -  Worksheet Comparison - "DataSelection" vs. "GlcCMax" : different
+2023-06-21 16:30:56,313 - __main__ - INFO -  Worksheet Comparison - "DataSelection" vs. "InsCMax" : different
+2023-06-21 16:30:56,313 - __main__ - INFO -  Worksheet Comparison - "GlcCMax" vs. "DataSelection" : different
+2023-06-21 16:30:56,315 - __main__ - INFO -  Worksheet Comparison - "GlcCMax" vs. "InsCMax" : same
+2023-06-21 16:30:56,315 - __main__ - INFO -  Worksheet Comparison - "InsCMax" vs. "DataSelection" : different
+2023-06-21 16:30:56,315 - __main__ - INFO -  Worksheet Comparison - "InsCMax" vs. "GlcCMax" : same
+2023-06-21 16:31:07,595 - __main__ - INFO -  MMTT_STRAW_Dose_resposne_2014.xlsx read successfully with the sheet name "DataSelection"
+2023-06-21 16:31:10,518 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/STRB_datasets/MMTT_STRAW_Dose_resposne_2014.xlsx.csv
+2023-06-21 16:31:10,518 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-21 16:31:10,518 - __main__ - INFO -  standardise_names(): [Ethnicity] renamed to [Ethnicity_1]
+2023-06-21 16:31:10,518 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 16:31:10,518 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-21 16:31:10,518 - __main__ - INFO -  standardise_names(): [Treat] renamed to [Tx]
+2023-06-21 16:31:10,518 - __main__ - INFO -  standardise_names(): [RatioInsGlc] renamed to [IR]
+2023-06-21 16:31:10,533 - __main__ - INFO -  ./data/onboarded/MMTT_STRAW-Dose-resposne_2014 saved successfully
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Repeat
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Ins
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - b_HOMA
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - IR
+2023-06-21 16:31:10,533 - __main__ - INFO -  validate_keys(): PRESENT Column - RatioGlcIns
+2023-06-21 16:31:10,549 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-21 16:31:10,549 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64

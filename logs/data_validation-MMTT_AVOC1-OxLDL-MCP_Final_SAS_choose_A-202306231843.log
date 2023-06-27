@@ -1,0 +1,39 @@
+2023-06-23 18:43:27,810 - __main__ - INFO -  src/onboarding/Data_Key-Map_IJ.xlsx read successfully
+2023-06-23 18:43:27,889 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (262, 24)
+2023-06-23 18:43:27,889 - __main__ - INFO -  Worksheet "Sheet3" dataframe shape - (0, 0)
+2023-06-23 18:43:27,889 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet3" : different
+2023-06-23 18:43:27,889 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet1" : different
+2023-06-23 18:43:34,698 - __main__ - INFO -  MMTT_AVOC1_OxLDL_MCP_Final_SAS_choose_A.xlsx read successfully with the sheet name "Sheet1"
+2023-06-23 18:43:36,251 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_OxLDL_MCP_Final_SAS_choose_A.xlsx.csv
+2023-06-23 18:43:36,251 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-23 18:43:36,251 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-23 18:43:36,251 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-23 18:43:36,251 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-23 18:43:36,267 - __main__ - INFO -  ./data/onboarded/MMTT_AVOC1-OxLDL-MCP_Final_SAS_choose_A saved successfully
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - BMICat
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - TX2
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - Time1
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - OxLDL
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - OxLDLb
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - OxLDLn
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - logOxLDL
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - MCP1
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - MCP1b
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - MCP1n
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - logMCP1
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - TNF
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - TNFb
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - TNFn
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_keys(): PRESENT Column - logTNF
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Age] expected type [int64] but actual type - float64
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-23 18:43:36,267 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64

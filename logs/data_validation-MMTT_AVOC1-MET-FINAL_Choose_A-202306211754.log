@@ -1,0 +1,34 @@
+2023-06-21 17:54:06,027 - __main__ - INFO -  src/onboarding/Data_Key-Map_IJ.xlsx read successfully
+2023-06-21 17:54:06,293 - __main__ - INFO -  Worksheet "Final" dataframe shape - (744, 17)
+2023-06-21 17:54:06,293 - __main__ - INFO -  Worksheet "Final_TxAct" dataframe shape - (712, 17)
+2023-06-21 17:54:06,293 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Final_TxAct" : different
+2023-06-21 17:54:06,293 - __main__ - INFO -  Worksheet Comparison - "Final_TxAct" vs. "Final" : different
+2023-06-21 17:54:17,270 - __main__ - INFO -  MMTT_AVOC1_MET_FINAL_Choose_A.xlsx read successfully with the sheet name "Final"
+2023-06-21 17:54:19,379 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_MET_FINAL_Choose_A.xlsx.csv
+2023-06-21 17:54:19,395 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-21 17:54:19,395 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 17:54:19,395 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-21 17:54:19,395 - __main__ - INFO -  standardise_names(): [TGb] renamed to [b_TG]
+2023-06-21 17:54:19,395 - __main__ - INFO -  standardise_names(): [Glc_B] renamed to [b_Glc]
+2023-06-21 17:54:19,395 - __main__ - INFO -  standardise_names(): [Ins] renamed to [Insulin]
+2023-06-21 17:54:19,395 - __main__ - INFO -  standardise_names(): [Ins_B] renamed to [b_Ins]
+2023-06-21 17:54:19,395 - __main__ - INFO -  ./data/onboarded/MMTT_AVOC1-MET-FINAL_Choose_A saved successfully
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx_Actual
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Time1
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
+2023-06-21 17:54:19,395 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time1] expected type [float64] but actual type - int64

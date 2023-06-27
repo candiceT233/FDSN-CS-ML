@@ -1,0 +1,53 @@
+2023-06-21 16:13:21,369 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:13:49,534 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 16:13:50,146 - __main__ - INFO -  RRB_Demo.xlsx read successfully
+2023-06-21 16:13:52,991 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/RRB_datasets/RRB_Demo.xlsx.csv
+2023-06-21 16:13:52,991 - __main__ - INFO -  standardise_names(): [Ethnicity 1] renamed to [Ethnicity_1]
+2023-06-21 16:13:52,991 - __main__ - INFO -  standardise_names(): [Ethnicity 2] renamed to [Ethnicity_2]
+2023-06-21 16:13:52,991 - __main__ - INFO -  standardise_names(): [F-Gluc] renamed to [F_Gluc]
+2023-06-21 16:13:53,007 - __main__ - INFO -  ./data/onboarded/RRB-Demo saved successfully
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Consentdate
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - ScreenDate
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - ScreenID
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_2
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - F_Gluc
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - V_Gluc
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - V_Ins
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - HOMA
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - IR/R
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - BodyTemp
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Height1
+2023-06-21 16:13:53,007 - __main__ - INFO -  validate_keys(): PRESENT Column - Height2
+2023-06-21 16:13:53,023 - __main__ - INFO -  validate_keys(): PRESENT Column - HeightM
+2023-06-21 16:13:53,023 - __main__ - INFO -  validate_keys(): PRESENT Column - HtM_m2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Weight2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - WeightM
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist1_M
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist2_M
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Waist3_M
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Sys3
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - SysM
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - Dia3
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - DiaM
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - HR1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - HR2
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - HR3
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - HRM
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - QC1
+2023-06-21 16:13:53,024 - __main__ - INFO -  validate_keys(): PRESENT Column - QC2

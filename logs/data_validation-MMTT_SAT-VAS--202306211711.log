@@ -1,0 +1,43 @@
+2023-06-21 17:11:41,562 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 17:11:41,718 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (700, 29)
+2023-06-21 17:11:41,718 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-21 17:11:41,718 - __main__ - INFO -  Worksheet "Sheet3" dataframe shape - (0, 0)
+2023-06-21 17:11:41,734 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-21 17:11:41,734 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet3" : different
+2023-06-21 17:11:41,734 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-21 17:11:41,734 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet3" : same
+2023-06-21 17:11:41,734 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet1" : different
+2023-06-21 17:11:41,734 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet2" : same
+2023-06-21 17:11:47,577 - __main__ - INFO -  MMTT_SAT_VAS_.xls read successfully with the sheet name "Sheet1"
+2023-06-21 17:11:49,331 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_SAT_datasets/MMTT_SAT_VAS_.xls.csv
+2023-06-21 17:11:49,331 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-21 17:11:49,344 - __main__ - INFO -  ./data/onboarded/MMTT_SAT-VAS- saved successfully
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - Rest_F1
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - F1_category_
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - Disinhib_F2
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - Hunger_F3
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - hung
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - hungn
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - full
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - fulln
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - des
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - desn
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - amt
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - amtn
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - thirst
+2023-06-21 17:11:49,344 - __main__ - INFO -  validate_keys(): PRESENT Column - thirstn
+2023-06-21 17:11:49,359 - __main__ - INFO -  validate_keys(): PRESENT Column - naus
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - nausn
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - sat
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - satn
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - alert
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - alertn
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - tired
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - tiredn
+2023-06-21 17:11:49,360 - __main__ - INFO -  validate_keys(): PRESENT Column - pleas

@@ -1,0 +1,45 @@
+2023-06-21 17:05:50,720 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (700, 29)
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet "Sheet3" dataframe shape - (0, 0)
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet3" : different
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet3" : same
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet1" : different
+2023-06-21 17:05:50,892 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet2" : same
+2023-06-21 17:06:02,649 - __main__ - INFO -  MMTT_SAT_VAS_.xls read successfully with the sheet name "Sheet1"
+2023-06-21 17:06:03,828 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_SAT_datasets/MMTT_SAT_VAS_.xls.csv
+2023-06-21 17:06:03,828 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-21 17:06:03,843 - __main__ - INFO -  ./data/onboarded/MMTT_SAT-VAS- saved successfully
+2023-06-21 17:06:03,843 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 17:06:03,843 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 17:06:03,843 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 17:06:03,843 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 17:06:03,843 - __main__ - INFO -  validate_keys(): PRESENT Column - Rest_F1
+2023-06-21 17:06:03,862 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 17:06:03,862 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-21 17:06:03,876 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - F1_category_, Disinhib_F2, Hunger_F3, hung, hungn, full, fulln, des, desn, amt, amtn, thirst, thirstn, naus, nausn, sat, satn, alert, alertn, tired, tiredn, pleas, 
+
+2023-06-21 17:06:03,876 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [F1_category_] data type - object
+2023-06-21 17:06:03,876 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Disinhib_F2] data type - int64
+2023-06-21 17:06:03,876 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Hunger_F3] data type - int64
+2023-06-21 17:06:03,891 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [hung] data type - object
+2023-06-21 17:06:03,891 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [hungn] data type - float64
+2023-06-21 17:06:03,891 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [full] data type - object
+2023-06-21 17:06:03,891 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [fulln] data type - float64
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [des] data type - object
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [desn] data type - object
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [amt] data type - object
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [amtn] data type - float64
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [thirst] data type - object
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [thirstn] data type - float64
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [naus] data type - object
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [nausn] data type - float64
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [sat] data type - object
+2023-06-21 17:06:03,892 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [satn] data type - float64
+2023-06-21 17:06:03,896 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [alert] data type - object
+2023-06-21 17:06:03,896 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [alertn] data type - float64
+2023-06-21 17:06:03,896 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [tired] data type - object
+2023-06-21 17:06:03,896 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [tiredn] data type - float64
+2023-06-21 17:06:03,896 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [pleas] data type - float64

@@ -2,9 +2,10 @@
 *.csv
 *.xlsx
 *.xls
-
+!*Data_Key_Map_.*.xlsx
 # logs
-logs/
+# logs/
+
 
 # others
 .DS_Store
