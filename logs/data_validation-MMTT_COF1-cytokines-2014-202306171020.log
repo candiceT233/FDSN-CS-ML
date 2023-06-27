@@ -1,0 +1,35 @@
+2023-06-17 10:20:04,142 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:20:04,698 - __main__ - INFO -  MMTT_COF1_cytokines_2014.xlsx read successfully
+2023-06-17 10:20:06,487 - __main__ - INFO -  Default filename name is: data/raw/MMTT_COF1_datasets/MMTT_COF1_cytokines_2014.xlsx.csv
+2023-06-17 10:20:06,493 - __main__ - INFO -  standardise_names(): [Rand Number] renamed to [Subject]
+2023-06-17 10:20:06,496 - __main__ - INFO -  standardise_names(): [Ethnicity 1] renamed to [Ethnicity_1]
+2023-06-17 10:20:06,498 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-17 10:20:06,501 - __main__ - INFO -  standardise_names(): [Treatment] renamed to [Tx]
+2023-06-17 10:20:06,529 - __main__ - INFO -  ./data/onboarded/MMTT_COF1-cytokines-2014 saved successfully
+2023-06-17 10:20:06,530 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-17 10:20:06,531 - __main__ - INFO -  validate_keys(): PRESENT Column - Screening Number
+2023-06-17 10:20:06,534 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:20:06,535 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:20:06,535 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-17 10:20:06,536 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:20:06,538 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-17 10:20:06,539 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-17 10:20:06,539 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:20:06,540 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-17 10:20:06,571 - __main__ - INFO -  validate_keys(): PRESENT Column - QC1
+2023-06-17 10:20:06,572 - __main__ - INFO -  validate_keys(): PRESENT Column - QC2
+2023-06-17 10:20:06,572 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - IL2 (pg/ml), IL4 (pg/ml), IL6 (pg/ml), IL8 (pg/ml), IL10 (pg/ml), VEGF (pg/ml), IFNG (pg/ml), TNFA (pg/ml), IL1A (pg/ml), IL1B (pg/ml), MCP1 (pg/ml), EGF (pg/ml), 
+
+2023-06-17 10:20:06,583 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - object
+2023-06-17 10:20:06,589 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL2 (pg/ml)] data type - object
+2023-06-17 10:20:06,590 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL4 (pg/ml)] data type - object
+2023-06-17 10:20:06,590 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL6 (pg/ml)] data type - float64
+2023-06-17 10:20:06,591 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL8 (pg/ml)] data type - float64
+2023-06-17 10:20:06,592 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL10 (pg/ml)] data type - float64
+2023-06-17 10:20:06,593 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VEGF (pg/ml)] data type - float64
+2023-06-17 10:20:06,594 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IFNG (pg/ml)] data type - object
+2023-06-17 10:20:06,594 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TNFA (pg/ml)] data type - float64
+2023-06-17 10:20:06,595 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL1A (pg/ml)] data type - object
+2023-06-17 10:20:06,597 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IL1B (pg/ml)] data type - object
+2023-06-17 10:20:06,598 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [MCP1 (pg/ml)] data type - float64
+2023-06-17 10:20:06,599 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [EGF (pg/ml)] data type - float64

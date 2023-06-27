@@ -1,0 +1,35 @@
+2023-06-15 15:42:46,230 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-15 15:42:46,485 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (1680, 18)
+2023-06-15 15:42:46,486 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-15 15:42:46,486 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-15 15:42:46,487 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-15 15:43:43,106 - __main__ - INFO -  Worksheet selected - name: "Sheet1", size: (1680, 18)
+2023-06-15 15:43:43,725 - __main__ - INFO -  MMTT_SET_Metabolic_11_10_11EP.xlsx read successfully with the sheet name "Sheet1"
+2023-06-15 15:43:47,662 - __main__ - INFO -  Default filename name is: data/raw/MMTT_SET_datasets/MMTT_SET_Metabolic_11_10_11EP.xlsx.csv
+2023-06-15 15:43:47,665 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-15 15:43:47,666 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-15 15:43:47,668 - __main__ - INFO -  standardise_names(): [Treat] renamed to [Tx]
+2023-06-15 15:43:47,671 - __main__ - INFO -  standardise_names(): [nTG] renamed to [N_TG]
+2023-06-15 15:43:47,673 - __main__ - INFO -  standardise_names(): [Glucose] renamed to [Glc]
+2023-06-15 15:43:47,675 - __main__ - INFO -  standardise_names(): [nGlc] renamed to [N_Glc]
+2023-06-15 15:43:47,676 - __main__ - INFO -  standardise_names(): [nIns] renamed to [N_Ins]
+2023-06-15 15:43:47,723 - __main__ - INFO -  ./data/onboarded/MMTT_SET-Metabolic-11_10_11EP saved successfully
+2023-06-15 15:43:47,723 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-15 15:43:47,726 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-15 15:43:47,726 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-15 15:43:47,727 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-15 15:43:47,727 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-15 15:43:47,730 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-15 15:43:47,730 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-15 15:43:47,733 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-15 15:43:47,733 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-15 15:43:47,734 - __main__ - INFO -  validate_keys(): PRESENT Column - N_TG
+2023-06-15 15:43:47,734 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-15 15:43:47,735 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Glc
+2023-06-15 15:43:47,735 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-15 15:43:47,736 - __main__ - INFO -  validate_keys(): PRESENT Column - N_Ins
+2023-06-15 15:43:47,736 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - TYPE, AMOUNT (gram) Treat, 
+
+2023-06-15 15:43:47,747 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TYPE] data type - object
+2023-06-15 15:43:47,748 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [AMOUNT (gram) Treat] data type - int64
+2023-06-15 15:43:47,749 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - object
