@@ -1,0 +1,93 @@
+2023-06-21 17:55:09,444 - __main__ - INFO -  src/onboarding/Data_Key-Map_IJ.xlsx read successfully
+2023-06-21 17:55:09,882 - __main__ - INFO -  Worksheet "Report" dataframe shape - (251, 23)
+2023-06-21 17:55:09,882 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (247, 28)
+2023-06-21 17:55:09,882 - __main__ - INFO -  Worksheet "Final" dataframe shape - (248, 47)
+2023-06-21 17:55:09,882 - __main__ - INFO -  Worksheet "Final_Impute" dataframe shape - (232, 47)
+2023-06-21 17:55:09,882 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Sheet1" : different
+2023-06-21 17:55:09,882 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Final" : different
+2023-06-21 17:55:09,882 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Final_Impute" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Report" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Final" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Final_Impute" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Report" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Sheet1" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Final_Impute" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Report" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Sheet1" : different
+2023-06-21 17:55:09,897 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Final" : different
+2023-06-21 17:55:25,094 - __main__ - INFO -  MMTT_AVOC1_NMR_LIPIDS_choose_A.xlsx read successfully with the sheet name "Report"
+2023-06-21 17:55:26,547 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_NMR_LIPIDS_choose_A.xlsx.csv
+2023-06-21 17:56:09,811 - __main__ - INFO -  src/onboarding/Data_Key-Map_IJ.xlsx read successfully
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet "Report" dataframe shape - (251, 23)
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (247, 28)
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet "Final" dataframe shape - (248, 47)
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet "Final_Impute" dataframe shape - (232, 47)
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Sheet1" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Final" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Report" vs. "Final_Impute" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Report" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Final" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Final_Impute" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Report" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Sheet1" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Final_Impute" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Report" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Sheet1" : different
+2023-06-21 17:56:10,249 - __main__ - INFO -  Worksheet Comparison - "Final_Impute" vs. "Final" : different
+2023-06-21 17:56:14,717 - __main__ - INFO -  MMTT_AVOC1_NMR_LIPIDS_choose_A.xlsx read successfully with the sheet name "Final"
+2023-06-21 17:56:16,561 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/MMTT_AVOC1_NMR_LIPIDS_choose_A.xlsx.csv
+2023-06-21 17:56:16,561 - __main__ - INFO -  standardise_names(): [Subj] renamed to [Subject]
+2023-06-21 17:56:16,561 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-21 17:56:16,561 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-21 17:56:16,577 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-21 17:56:16,577 - __main__ - INFO -  ./data/onboarded/MMTT_AVOC1-NMR-LIPIDS_choose_A saved successfully
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - TX
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-21 17:56:16,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - Tx_Act, Time2, VLDLCP3, VLDLCP_B, VLCP3, VLCP_B, VMP3, VMP3_B, VSP3, VSP3_B, LDLP3, LDLP3_B, IDLP3, IDLP3_B, LLP3, LLP3_B, LSP3, LSP3_B, HDLP3, HDLP3_B, HLP3, HLP3_B, HMP3, HMP3_B, HSP3, HSP3_B, VZ3, VZ3_B, LZ3, LZ3_B, HZ3, HZ3_B, NTG3, NTG3_B, NVCTG3, NVCTG_B, NHC3, NHC3_B, 
+
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Tx_Act] data type - object
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - object
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Time2] data type - int64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VLDLCP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VLDLCP_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VLCP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VLCP_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VMP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VMP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VSP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VSP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LDLP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LDLP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IDLP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [IDLP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LLP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LLP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LSP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LSP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HDLP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HDLP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HLP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HLP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HMP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HMP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HSP3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HSP3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VZ3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [VZ3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LZ3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [LZ3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HZ3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [HZ3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NTG3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NTG3_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NVCTG3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NVCTG_B] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NHC3] data type - float64
+2023-06-21 17:56:16,624 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [NHC3_B] data type - float64

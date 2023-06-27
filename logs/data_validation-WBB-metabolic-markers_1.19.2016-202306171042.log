@@ -1,0 +1,57 @@
+2023-06-17 10:41:54,943 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:42:19,657 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx. read successfully
+2023-06-17 10:42:19,851 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (360, 12)
+2023-06-17 10:42:19,851 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-17 10:42:19,852 - __main__ - INFO -  Worksheet "Sheet3" dataframe shape - (0, 0)
+2023-06-17 10:42:19,852 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-17 10:42:19,853 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet3" : different
+2023-06-17 10:42:19,853 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-17 10:42:20,146 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet3" : same
+2023-06-17 10:42:20,148 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet1" : different
+2023-06-17 10:42:20,150 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet2" : same
+2023-06-17 10:42:31,429 - __main__ - INFO -  Worksheet selected - name: "Sheet1", size: (360, 12)
+2023-06-17 10:42:31,568 - __main__ - INFO -  WBB_metabolic_markers_1.19.2016.xlsx read successfully with the sheet name "Sheet1"
+2023-06-17 10:42:34,162 - __main__ - INFO -  Default filename name is: data/raw/WBB_datasets/WBB_metabolic_markers_1.19.2016.xlsx.csv
+2023-06-17 10:42:34,283 - __main__ - INFO -  ./data/onboarded/WBB-metabolic-markers_1.19.2016 saved successfully
+2023-06-17 10:42:34,284 - __main__ - INFO -  validate_keys(): PRESENT Column - Randomization
+2023-06-17 10:42:34,285 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:42:34,286 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:42:34,290 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:42:34,291 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:42:34,292 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-17 10:42:34,293 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-17 10:42:34,300 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - Ethn_1, Time(H), TRIGS(mg/dL), GLUC(mg/dL), INSULIN(uIU/mL), 
+
+2023-06-17 10:42:34,303 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Ethn_1] data type - object
+2023-06-17 10:42:34,306 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Time(H)] data type - float64
+2023-06-17 10:42:34,307 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TRIGS(mg/dL)] data type - float64
+2023-06-17 10:42:34,307 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [GLUC(mg/dL)] data type - float64
+2023-06-17 10:42:34,308 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [INSULIN(uIU/mL)] data type - float64
+2023-06-17 10:42:39,896 - __main__ - INFO -  src/onboarding/Data_Key-Map.xlsx read successfully
+2023-06-17 10:42:40,091 - __main__ - INFO -  Worksheet "Sheet1" dataframe shape - (360, 12)
+2023-06-17 10:42:40,092 - __main__ - INFO -  Worksheet "Sheet2" dataframe shape - (0, 0)
+2023-06-17 10:42:40,092 - __main__ - INFO -  Worksheet "Sheet3" dataframe shape - (0, 0)
+2023-06-17 10:42:40,093 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet2" : different
+2023-06-17 10:42:40,093 - __main__ - INFO -  Worksheet Comparison - "Sheet1" vs. "Sheet3" : different
+2023-06-17 10:42:40,094 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet1" : different
+2023-06-17 10:42:40,094 - __main__ - INFO -  Worksheet Comparison - "Sheet2" vs. "Sheet3" : same
+2023-06-17 10:42:40,094 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet1" : different
+2023-06-17 10:42:40,095 - __main__ - INFO -  Worksheet Comparison - "Sheet3" vs. "Sheet2" : same
+2023-06-17 10:42:41,374 - __main__ - INFO -  Worksheet selected - name: "Sheet1", size: (360, 12)
+2023-06-17 10:42:41,526 - __main__ - INFO -  WBB_metabolic_markers_1.19.2016.xlsx read successfully with the sheet name "Sheet1"
+2023-06-17 10:42:42,560 - __main__ - INFO -  Default filename name is: data/raw/WBB_datasets/WBB_metabolic_markers_1.19.2016.xlsx.csv
+2023-06-17 10:42:42,577 - __main__ - INFO -  ./data/onboarded/WBB-metabolic-markers_1.19.2016 saved successfully
+2023-06-17 10:42:42,577 - __main__ - INFO -  validate_keys(): PRESENT Column - Randomization
+2023-06-17 10:42:42,578 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-17 10:42:42,579 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-17 10:42:42,581 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-17 10:42:42,582 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-17 10:42:42,582 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-17 10:42:42,584 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-17 10:42:42,592 - __main__ - INFO -  validate_keys(): NOT-PRESENT Columns - Ethn_1, Time(H), TRIGS(mg/dL), GLUC(mg/dL), INSULIN(uIU/mL), 
+
+2023-06-17 10:42:42,595 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Ethn_1] data type - object
+2023-06-17 10:42:42,599 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [Time(H)] data type - float64
+2023-06-17 10:42:42,600 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [TRIGS(mg/dL)] data type - float64
+2023-06-17 10:42:42,600 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [GLUC(mg/dL)] data type - float64
+2023-06-17 10:42:42,601 - __main__ - INFO -  validate_datatypes(): NEWTYPE - Column [INSULIN(uIU/mL)] data type - float64

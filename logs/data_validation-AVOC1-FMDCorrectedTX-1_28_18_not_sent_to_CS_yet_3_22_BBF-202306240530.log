@@ -1,0 +1,50 @@
+2023-06-24 05:30:05,420 - __main__ - INFO -  src/onboarding/Data_Key_Map_IJ.xlsx read successfully
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet "Final" dataframe shape - (279, 25)
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet "Final (2)" dataframe shape - (279, 27)
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet "Corr" dataframe shape - (189, 30)
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Final (2)" : different
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet Comparison - "Final" vs. "Corr" : different
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet Comparison - "Final (2)" vs. "Final" : different
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet Comparison - "Final (2)" vs. "Corr" : different
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet Comparison - "Corr" vs. "Final" : different
+2023-06-24 05:30:06,436 - __main__ - INFO -  Worksheet Comparison - "Corr" vs. "Final (2)" : different
+2023-06-24 05:30:20,299 - __main__ - INFO -  AVOC1_FMDCorrectedTX_1_28_18_not_sent_to_CS_yet_3_22_BBF.xlsx read successfully with the sheet name "Final (2)"
+2023-06-24 05:30:21,799 - __main__ - INFO -  Default filename name is: E:/Repos/FDSN-CS-ML/data/raw/MMTT_AVOC1_datasets/AVOC1_FMDCorrectedTX_1_28_18_not_sent_to_CS_yet_3_22_BBF.xlsx.csv
+2023-06-24 05:30:21,799 - __main__ - INFO -  standardise_names(): [Ethnic] renamed to [Ethnicity_1]
+2023-06-24 05:30:21,799 - __main__ - INFO -  standardise_names(): [Sex] renamed to [Gender]
+2023-06-24 05:30:21,799 - __main__ - INFO -  standardise_names(): [Seq] renamed to [Sequence]
+2023-06-24 05:30:21,799 - __main__ - INFO -  standardise_names(): [TGb] renamed to [b_TG]
+2023-06-24 05:30:21,799 - __main__ - INFO -  standardise_names(): [Glc_B] renamed to [b_Glc]
+2023-06-24 05:30:21,799 - __main__ - INFO -  standardise_names(): [Ins] renamed to [Insulin]
+2023-06-24 05:30:21,799 - __main__ - INFO -  standardise_names(): [Ins_B] renamed to [b_Ins]
+2023-06-24 05:30:21,799 - __main__ - INFO -  ./data/onboarded/AVOC1-FMDCorrectedTX-1_28_18_not_sent_to_CS_yet_3_22_BBF saved successfully
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Subject
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Ethnicity_1
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Age
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Gender
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - BMI
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - BMICat
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Sequence
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Tx
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - TX_Actual
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Visit
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Time
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - Time1
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - FMDsys
+2023-06-24 05:30:21,799 - __main__ - INFO -  validate_keys(): PRESENT Column - FMDdia
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - AvePreOccCM
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - PostOcc_HiDiamCM
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - AvePreOccMM
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - PostOcc_HiDiamMM
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - PerFMD
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - PerFMDB
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - Diffn
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - TG
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - b_TG
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - Glc
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Glc
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - Insulin
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_keys(): PRESENT Column - b_Ins
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Age] expected type [int64] but actual type - float64
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Visit] expected type [int64] but actual type - float64
+2023-06-24 05:30:21,814 - __main__ - INFO -  validate_datatypes(): MISMATCH - Column [Time] expected type [int64] but actual type - float64
