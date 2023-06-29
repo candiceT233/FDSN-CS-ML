@@ -3,9 +3,9 @@
 *.xlsx
 *.xls
 !*Data_Key_Map_.*.xlsx
+!data/onboarded/*.csv
 # logs
 # logs/
-
 
 # others
 .DS_Store
