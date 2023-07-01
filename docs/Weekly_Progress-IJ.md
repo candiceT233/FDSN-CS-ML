@@ -80,7 +80,41 @@
 - Data preprocessing
 - optimizing onboarding scripts, if necessary
 
-### Week 4 [July 3rd] :yellow_circle:
+### Week 4 [July 3rd] :white_check_mark:
+**Goals**
+
+Onboarded datasets cross checked and to be uploaded for Exploratory data analysis (EDA)
+
+**What went well?**
+
+- cross checked updated key map with main branch to ensure consistency
+- renamed onboarded datasets to remove any redundant extensions
+- re ran some datasets again
+- added a notebook for EDA performed on RBB dataset
+- created a templete for implementing correlation matrix from processed dataframes
+
+**What did not go well?**
+
+N/A
+
+**Did I learn anything important?**
+
+- learned which features in RBB are most related in order to find our target variable
+
+**What is holding us back?**
+
+N/A
+
+**What urgent questions do I have?**
+
+N/A
+
+**Next step?**
+
+- Continue with other datasets
+
+### Week 5 [July 11th] :yellow_circle:
+
 **Goals**
 
 **What went well?**
