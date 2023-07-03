@@ -1,6 +1,23 @@
 https://docs.google.com/presentation/d/1dXccaWaI4j_8oYW1Np4syuGb1JjI6KFKwCFOifmjV58/edit?usp=sharing
 
 
+Week 4 [Jul 1st] 
+
+Ansuhka and Ishrat  shared the onboarded datasets with me and are working on specifying relevant dataset . I merged the scripts and prepared a jupyter file for data preprocessing.The codes had some bugs, I cleaned it and it is ready to be used for data preprocessibng. 
+
+What did not go well?
+the codes took time. 
+
+Did I learn anything important? 
+
+What is holding us back? Since we have different datasets with different features, we need to specify relevant datasets. 
+
+What urgent questions do I have?
+
+Next step? Data preprocessing and ,identify the most appropriate target values that will drive our analysis forward by employing different methods, such as correlation matrix analysis.
+
+
+
 
 
 
