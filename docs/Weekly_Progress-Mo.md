@@ -1,5 +1,27 @@
 https://docs.google.com/presentation/d/1dXccaWaI4j_8oYW1Np4syuGb1JjI6KFKwCFOifmjV58/edit?usp=sharing
 
+### Week 5 [Jul 10th] :white_check_mark:
+**Goals**
+- The key elements and preprocessing scripts are cleaned, merged, and pushed to GitHub. The dataset is preprocessed and pushed to Github for the next steps. The next steps and tasks are discussed with Ishrat and Anushka. The step at this point is to find the target variables per related datasets, feature engineering, and then deploy analysis methods.
+  
+**What went well?**
+- data preprocessing
+  
+**What did not go well?**
+- keymap had to be cleaned. I did and pushed to github
+  
+**Did I learn anything important?**
+- N/A
+  
+**What is holding us back?**
+- N/A
+  
+**What urgent questions do I have?**
+- N/A
+  
+**Next step?**
+- Working on the preprocessed dataset to find target variable, feature engineering, and then apply ML/DL model
+
 
 Week 4 [Jul 1st] 
 
