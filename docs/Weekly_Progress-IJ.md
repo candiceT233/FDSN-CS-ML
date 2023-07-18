@@ -113,7 +113,76 @@ N/A
 
 - Continue with other datasets
 
-### Week 5 [July 11th] :yellow_circle:
+### Week 5 [July 11th] :white_check_mark:
+
+**Goals**
+
+Data exploration for identifying target variables
+
+**What went well?**
+
+created a template to calculate correlation matrix from raw dataset
+
+
+**What did not go well?**
+
+needed to wait for preprocessed an merged dataset
+
+
+**Did I learn anything important?**
+
+N/A
+
+**What is holding us back?**
+
+N/A
+
+**What urgent questions do I have?**
+
+N/A
+
+**Next step?**
+
+Experiment with more methods
+
+
+### Week 6 [July 18th] :white_check_mark:
+
+**Goals**
+
+Data exploration for identifying target variables
+
+**What went well?**
+
+- developed intuition between correlated attributes per dataset
+- Separate notebooks per dataset discussing the possible pairs of attributes that can be considered for target
+- Comparing pearson and spearman method for correlation
+
+
+**What did not go well?**
+
+- Could not handle datetime attribute
+- Time attribute has inconsistent data
+
+
+**Did I learn anything important?**
+
+N/A
+
+**What is holding us back?**
+
+N/A
+
+**What urgent questions do I have?**
+
+- what can we do with the large Nulls in some attributes where simply imputing with mean is not practical?
+
+**Next step?**
+
+- Further EDA
+
+
+### Week 7 [July 25th] :yellow_circle:
 
 **Goals**
 
