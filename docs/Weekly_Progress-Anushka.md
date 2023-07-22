@@ -1,4 +1,4 @@
-Week 1 [June 13] 
+### Week 1 [June 13] :
 Goals
 Getting familiarized with the GitHub Platform and understanding so far what has been done in the nutrition project.
 
