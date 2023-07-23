@@ -23,7 +23,8 @@ NA
  Getting my doubts cleared about the datasets and the variables from my Phd Lead
 
 
-### Week 2 [June 20] 
+
+### Week 2 [June 20]: 
 
 **Goals**
 Standardize the datasets using the onboarding tool
@@ -48,7 +49,8 @@ NA
 Will be discussed on tuesday's meeting.
 
 
-### Week 3 [June 27] 
+
+### Week 3 [June 27] :
 
 **Goal**
 upload the log files and the key-map excel file for review.
@@ -72,7 +74,8 @@ NA
 Start working on finding any correlations between the variables and explore various techniques such as Correlation Analysis, 
 Correlation Matrix for determining the target variable, Classification, Time-Series Analysis.
 
-### Week 4 [July 4] 
+
+### Week 4 [July 4]: 
 
 **Goal**
 Perform EDA on onboarded datasets
@@ -95,7 +98,8 @@ NA
 **Next step**
 Start working on finding any correlations between the variables from the combined dataset.
 
-### Week 5 [July 11] 
+
+### Week 5 [July 11]:
 
 **Goal**
 Run correlated_attribute.py file for finding out most important correlated variables from the combined datasets
@@ -119,7 +123,7 @@ NA
 **Next step**
 Start working on finding any correlations between the variables from the combined dataset using other methods.
 
-### Week 6 [July 18] 
+### Week 6 [July 18]:
 
 **Goal**
 Run correlated_attribute.py file for finding out most important correlated variables from the combined datasets using other methods.
