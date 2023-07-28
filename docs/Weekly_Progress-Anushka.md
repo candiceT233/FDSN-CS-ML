@@ -147,3 +147,28 @@ NA
 **Next step**
 Further EDA and finding out more methods to get the target variables.
 
+### Week 6 [July 25]:
+
+**Goal**
+Using PCA Method for finding out most important correlated variables from the combined datasets using other methods.
+
+**What went well**
+Used PCA method to find out the important features
+Created separated jupyter notebooks of  WBB,STRB,OGTT,RRB datasets.
+
+**What did not go well**
+NA
+
+**Did I learn anything important**
+NA
+
+**What is holding us back**
+NA
+
+**What urgent questions do I have**
+NA
+
+**Next step**
+Further EDA and finding out more methods to get the target variables.
+
+
