@@ -3,6 +3,7 @@
 *.xlsx
 *.xls
 !*Data_Key_Map_.*.xlsx
+!src/EDA/comparisons.xlsx
 !data/onboarded/*.csv
 # logs
 # logs/
