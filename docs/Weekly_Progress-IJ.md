@@ -182,7 +182,61 @@ N/A
 - Further EDA
 
 
-### Week 7 [July 25th] :yellow_circle:
+### Week 7 [July 25th] :white_check_mark:
+
+**Goals**
+
+Previous work reported. Changes discussed
+
+**What went well?**
+
+
+**What did not go well?**
+
+- imputations need to be handled
+
+
+**Did I learn anything important?**
+
+
+**What is holding us back?**
+
+
+**What urgent questions do I have?**
+
+**Next step?**
+
+
+### Week 8 [Aug 1st] :white_check_mark:
+
+**Goals**
+
+Extend previous week's work
+
+**What went well?**
+
+- implemented t-SNE
+- listed most important features in excel
+- wrote a markeddown file describing the EDA process
+
+**What did not go well?**
+
+- Need to handle data type inconsistencies
+
+
+**Did I learn anything important?**
+
+
+**What is holding us back?**
+
+
+**What urgent questions do I have?**
+- What to do with columns with less than 50% nulls
+
+**Next step?**
+
+
+### Week 9 [Aug 8th] :yellow_circle:
 
 **Goals**
 
