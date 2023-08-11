@@ -171,4 +171,29 @@ NA
 **Next step**
 Further EDA and finding out more methods to get the target variables.
 
+### Week 6 [August 1]:
+
+**Goal**
+Compare model accuracy for dataset before preprocessing for the target variable 'Insulin'
+
+**What went well**
+Used SVM to predict insulin levels for each dataset from the combined one.
+
+**What did not go well**
+Combined dataset consists of insulin value for few datasets as Zero after combining them together which was resulting in 100% accuracy for that particular dataset which was not correct as 
+all values for insulin were zero.
+
+**Did I learn anything important**
+NA
+
+**What is holding us back**
+NA
+
+**What urgent questions do I have**
+NA
+
+**Next step**
+Try to compare accuracy for dataset before preprocessing with different ML models.
+
+
 
